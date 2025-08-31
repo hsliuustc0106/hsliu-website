@@ -127,7 +127,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2410.01337",
                 diagramUrl: "/diagrams/PHYMPGN.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/PhyMPGN.mp4", // Video will be added later
                 tags: ["AI4Science", "Graph Neural Networks", "Message Passing", "Physics-encoded", "Spatiotemporal PDEs", "Scientific ML"]
               },
               {
