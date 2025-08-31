@@ -85,7 +85,7 @@ export default function Publications() {
                 description: "We introduce SlotPi, a novel physics-informed framework that combines object-centric representation learning with physical reasoning. By integrating physics principles into slot attention mechanisms, our approach enables more interpretable and physically consistent object-centric reasoning in complex dynamic systems.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2506.10778",
-                diagramUrl: "/diagrams/slotpi-architecture.png",
+                diagramUrl: "/diagrams/SlotPi.png",
                 tags: ["AI4Science", "Physics-informed ML", "Object-centric Learning", "Slot Attention", "Physical Reasoning"]
               },
               // 2024 Publications
