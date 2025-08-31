@@ -496,7 +496,19 @@ export default function Home() {
               }
             ].map((project, index) => (
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
-                <div className="w-full h-48 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-lg mb-4"></div>
+                {index === 0 ? (
+                  // MindScience project with custom logo
+                  <div className="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg mb-4 flex items-center justify-center p-4">
+                    <img 
+                      src="/hsliu-website/mindscience-icon.svg" 
+                      alt="MindScience Logo" 
+                      className="w-32 h-32 object-contain"
+                    />
+                  </div>
+                ) : (
+                  // Other projects with gradient background
+                  <div className="w-full h-48 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-lg mb-4"></div>
+                )}
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {project.title}
                 </h3>

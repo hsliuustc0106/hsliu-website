@@ -1,0 +1,72 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f8ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="80" rx="12" fill="url(#bgGradient)" />
+  
+  <!-- Neural network nodes representation -->
+  <g transform="translate(15, 20)">
+    <!-- Layer 1 -->
+    <circle cx="0" cy="10" r="3" fill="url(#iconGradient)" opacity="0.8" />
+    <circle cx="0" cy="20" r="3" fill="url(#iconGradient)" opacity="0.8" />
+    <circle cx="0" cy="30" r="3" fill="url(#iconGradient)" opacity="0.8" />
+    
+    <!-- Layer 2 -->
+    <circle cx="15" cy="5" r="3" fill="url(#iconGradient)" opacity="0.9" />
+    <circle cx="15" cy="15" r="3" fill="url(#iconGradient)" opacity="0.9" />
+    <circle cx="15" cy="25" r="3" fill="url(#iconGradient)" opacity="0.9" />
+    <circle cx="15" cy="35" r="3" fill="url(#iconGradient)" opacity="0.9" />
+    
+    <!-- Layer 3 -->
+    <circle cx="30" cy="10" r="3" fill="url(#iconGradient)" />
+    <circle cx="30" cy="20" r="3" fill="url(#iconGradient)" />
+    <circle cx="30" cy="30" r="3" fill="url(#iconGradient)" />
+    
+    <!-- Connections -->
+    <g stroke="url(#iconGradient)" stroke-width="1" opacity="0.6" fill="none">
+      <!-- Layer 1 to Layer 2 -->
+      <line x1="3" y1="10" x2="12" y2="5" />
+      <line x1="3" y1="10" x2="12" y2="15" />
+      <line x1="3" y1="20" x2="12" y2="15" />
+      <line x1="3" y1="20" x2="12" y2="25" />
+      <line x1="3" y1="30" x2="12" y2="25" />
+      <line x1="3" y1="30" x2="12" y2="35" />
+      
+      <!-- Layer 2 to Layer 3 -->
+      <line x1="18" y1="5" x2="27" y2="10" />
+      <line x1="18" y1="15" x2="27" y2="20" />
+      <line x1="18" y1="25" x2="27" y2="30" />
+      <line x1="18" y1="35" x2="27" y2="30" />
+    </g>
+  </g>
+  
+  <!-- Scientific symbols -->
+  <g transform="translate(160, 15)" fill="url(#iconGradient)" opacity="0.7">
+    <!-- DNA helix -->
+    <path d="M5 5 Q10 10 15 5 Q10 0 5 5 M5 15 Q10 20 15 15 Q10 10 5 15" stroke="url(#iconGradient)" stroke-width="1.5" fill="none" />
+    <!-- Atom -->
+    <circle cx="10" cy="35" r="8" stroke="url(#iconGradient)" stroke-width="1.5" fill="none" />
+    <circle cx="10" cy="35" r="2" fill="url(#iconGradient)" />
+    <ellipse cx="10" cy="35" rx="8" ry="3" stroke="url(#iconGradient)" stroke-width="1" fill="none" />
+    <ellipse cx="10" cy="35" rx="3" ry="8" stroke="url(#iconGradient)" stroke-width="1" fill="none" />
+  </g>
+  
+  <!-- Text -->
+  <text x="60" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="url(#textGradient)">MindScience</text>
+  <text x="60" y="42" font-family="Arial, sans-serif" font-size="10" fill="url(#textGradient)" opacity="0.9">AI4Science Platform</text>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="8" fill="url(#textGradient)" opacity="0.7">Powered by MindSpore</text>
+</svg>
