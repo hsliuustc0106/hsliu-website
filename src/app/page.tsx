@@ -130,13 +130,15 @@ export default function Home() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            Research Scientist • LLM Serving Expert • AI4Science Researcher
+            Research Scientist@Huawei 2012 Lab
           </p>
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            Research Scientist at Huawei 2012 Lab and maintainer of MindScience repository. 
-            Specialized expertise in LLM Serving (vLLM & vLLM-Ascend) and leading AI4Science 
+            
+            1. Committer of the MindSpore open source project.
+            2. Maintainer of MindSpore Science open source project, leading AI4Science 
             initiatives for scientific computing and discovery.
+            3. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
