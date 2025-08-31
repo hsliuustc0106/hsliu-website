@@ -78,7 +78,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2507.01975",
                 diagramUrl: "/diagrams/Learnable-differentiable Solver.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/LDSolver.mp4", // Video explanation available
                 tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
               },
               {
