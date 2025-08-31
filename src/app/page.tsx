@@ -118,9 +118,9 @@ export default function Home() {
           </p>
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            Research Scientist at Huawei 2012 Lab with specialized expertise in LLM Serving 
-            (vLLM & Dynamo) and AI4Science. Passionate about optimizing large language models 
-            and advancing scientific discovery through AI innovation.
+            Research Scientist at Huawei 2012 Lab and maintainer of MindScience repository. 
+            Specialized expertise in LLM Serving (vLLM & Dynamo) and leading AI4Science 
+            initiatives for scientific computing and discovery.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -190,18 +190,19 @@ export default function Home() {
             <div>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                 I&apos;m a Research Scientist at Huawei 2012 Lab with extensive experience in 
-                large language model serving and AI4Science. My research focuses on optimizing 
-                LLM inference systems like vLLM and Dynamo for high-performance deployment.
+                large language model serving and AI4Science. As a maintainer of the MindScience 
+                repository, I lead AI4Science initiatives and optimize LLM inference systems 
+                like vLLM and Dynamo for high-performance deployment.
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                With enormous experience in LLM serving technologies and deep expertise in 
-                AI4Science applications, I bridge cutting-edge research with practical 
+                With enormous experience in LLM serving technologies and deep expertise as 
+                a MindScience maintainer, I bridge cutting-edge AI4Science research with practical 
                 implementations for scientific computing and model optimization.
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['LLM Serving', 'vLLM', 'Dynamo', 'AI4Science', 'Python', 'C++', 'PyTorch', 'CUDA', 'Research'].map((skill) => (
+                {['LLM Serving', 'vLLM', 'Dynamo', 'MindScience', 'AI4Science', 'Python', 'C++', 'PyTorch', 'CUDA'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -233,11 +234,14 @@ export default function Home() {
               <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Leading research in LLM Serving optimization with specialized expertise in vLLM 
-                and Dynamo systems. Conducting cutting-edge AI4Science research with enormous 
-                experience in large language model deployment and inference optimization for 
-                scientific computing applications.
+                and Dynamo systems. Serving as maintainer of the MindScience repository, driving 
+                AI4Science initiatives and conducting cutting-edge research in large language model 
+                deployment and inference optimization for scientific computing applications.
               </p>
               <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  MindScience Maintainer
+                </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   LLM Serving
                 </span>
@@ -249,9 +253,6 @@ export default function Home() {
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   AI4Science
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Research Scientist
                 </span>
               </div>
             </div>
@@ -270,19 +271,19 @@ export default function Home() {
             {/* Project placeholders - you can customize these */}
             {[
               { 
+                title: 'MindScience Maintainer', 
+                desc: 'Maintainer of MindScience repository - leading AI4Science platform for scientific computing and discovery applications',
+                link: 'https://gitee.com/mindspore/mindscience'
+              },
+              { 
                 title: 'LLM Serving Research', 
                 desc: 'Specialized research in large language model serving optimization with expertise in vLLM and Dynamo systems',
                 link: 'https://github.com/vllm-project/vllm'
               },
               { 
-                title: 'AI4Science Research', 
-                desc: 'Leading research at Huawei 2012 Lab in AI for scientific computing and discovery applications',
+                title: 'AI4Science Publications', 
+                desc: 'Leading research at Huawei 2012 Lab in AI for scientific computing with published academic contributions',
                 link: 'https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN'
-              },
-              { 
-                title: 'vLLM Contributions', 
-                desc: 'Enormous experience contributing to vLLM open-source project for high-performance LLM inference',
-                link: 'https://github.com/vllm-project/vllm'
               }
             ].map((project, index) => (
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
