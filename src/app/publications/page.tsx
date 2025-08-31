@@ -64,16 +64,18 @@ export default function Publications() {
           <div className="space-y-8">
             {/* Publication Cards */}
             {[
+              // Sorted by arXiv publication date (newest to oldest)
               // 2025 Publications
               {
-                title: "Conservation-informed Graph Learning for Spatiotemporal Dynamics Prediction",
-                authors: "Yuan Mi, Pu Ren, Hongteng Xu, Hongsheng Liu, Zidong Wang, Yike Guo, Ji-Rong Wen, Hao Sun, Yang Liu",
+                title: "Learnable-Differentiable Finite Volume Solver for Accelerated Simulation of Flows",
+                authors: "Mengtao Yan, Qi Wang, Haining Wang, Ruizhi Chengze, Yi Zhang, Hongsheng Liu, Zidong Wang, Fan Yu, Qi Qi, Hao Sun",
                 venue: "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025",
                 type: "AI4Science",
-                description: "We present a novel conservation-informed graph learning approach for predicting spatiotemporal dynamics in complex systems. By incorporating physical conservation laws into graph neural networks, our method achieves superior accuracy in modeling spatiotemporal phenomena while maintaining physical consistency, advancing the field of AI4Science.",
+                description: "We present a novel learnable-differentiable finite volume solver that significantly accelerates computational fluid dynamics simulations. By combining traditional finite volume methods with differentiable programming and machine learning techniques, our approach enables end-to-end optimization of flow simulations while maintaining physical accuracy and computational efficiency.",
                 blogUrl: "#",
-                paperUrl: "https://arxiv.org/pdf/2412.20962",
-                tags: ["AI4Science", "Graph Learning", "Spatiotemporal Dynamics", "Conservation Laws", "Scientific ML"]
+                paperUrl: "https://arxiv.org/pdf/2507.01975",
+                diagramUrl: "/diagrams/finite-volume-solver.png",
+                tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
               },
               {
                 title: "SlotPi: Physics-informed Object-centric Reasoning Models",
@@ -83,17 +85,31 @@ export default function Publications() {
                 description: "We introduce SlotPi, a novel physics-informed framework that combines object-centric representation learning with physical reasoning. By integrating physics principles into slot attention mechanisms, our approach enables more interpretable and physically consistent object-centric reasoning in complex dynamic systems.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2506.10778",
+                diagramUrl: "/diagrams/slotpi-architecture.png",
                 tags: ["AI4Science", "Physics-informed ML", "Object-centric Learning", "Slot Attention", "Physical Reasoning"]
               },
+              // 2024 Publications
               {
-                title: "Learnable-Differentiable Finite Volume Solver for Accelerated Simulation of Flows",
-                authors: "Mengtao Yan, Qi Wang, Haining Wang, Ruizhi Chengze, Yi Zhang, Hongsheng Liu, Zidong Wang, Fan Yu, Qi Qi, Hao Sun",
+                title: "Conservation-informed Graph Learning for Spatiotemporal Dynamics Prediction",
+                authors: "Yuan Mi, Pu Ren, Hongteng Xu, Hongsheng Liu, Zidong Wang, Yike Guo, Ji-Rong Wen, Hao Sun, Yang Liu",
                 venue: "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025",
                 type: "AI4Science",
-                description: "We present a novel learnable-differentiable finite volume solver that significantly accelerates computational fluid dynamics simulations. By combining traditional finite volume methods with differentiable programming and machine learning techniques, our approach enables end-to-end optimization of flow simulations while maintaining physical accuracy and computational efficiency.",
+                description: "We present a novel conservation-informed graph learning approach for predicting spatiotemporal dynamics in complex systems. By incorporating physical conservation laws into graph neural networks, our method achieves superior accuracy in modeling spatiotemporal phenomena while maintaining physical consistency, advancing the field of AI4Science.",
                 blogUrl: "#",
-                paperUrl: "https://arxiv.org/pdf/2507.01975",
-                tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
+                paperUrl: "https://arxiv.org/pdf/2412.20962",
+                diagramUrl: "/diagrams/conservation-informed.png",
+                tags: ["AI4Science", "Graph Learning", "Spatiotemporal Dynamics", "Conservation Laws", "Scientific ML"]
+              },
+              {
+                title: "P²C Net: PDE-Preserved Coarse Correction Network for efficient prediction of spatiotemporal dynamics",
+                authors: "Qi Wang, Pu Ren, Haoyu Zhou, Xiao-Yu Liu, Zidong Deng, Yi Zhang, Ruizhi Chengze, Hongsheng Liu, et al.",
+                venue: "Advances in Neural Information Processing Systems (NeurIPS) 2024",
+                type: "AI4Science",
+                description: "We introduce P²C Net, a novel PDE-preserved coarse correction network that efficiently predicts spatiotemporal dynamics. Our method combines coarse-scale predictions with fine-scale corrections while preserving the underlying physical constraints, achieving significant computational speedup without sacrificing accuracy in spatiotemporal modeling tasks.",
+                blogUrl: "#",
+                paperUrl: "https://arxiv.org/pdf/2411.00040",
+                diagramUrl: "/diagrams/p2c-net-architecture.png",
+                tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
               },
               {
                 title: "PhyMPGN: Physics-encoded Message Passing Graph Network for spatiotemporal PDE systems",
@@ -103,28 +119,8 @@ export default function Publications() {
                 description: "We present PhyMPGN, a physics-encoded message passing graph network designed for solving spatiotemporal PDE systems. Our approach integrates physical principles directly into the message passing framework, enabling more accurate and physically consistent predictions for complex spatiotemporal dynamics while maintaining computational efficiency.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2410.01337",
+                diagramUrl: "/diagrams/phympgn-framework.png",
                 tags: ["AI4Science", "Graph Neural Networks", "Message Passing", "Physics-encoded", "Spatiotemporal PDEs", "Scientific ML"]
-              },
-              // 2024 Publications
-              {
-                title: "P²C Net: PDE-Preserved Coarse Correction Network for efficient prediction of spatiotemporal dynamics",
-                authors: "Qi Wang, Pu Ren, Haoyu Zhou, Xiao-Yu Liu, Zidong Deng, Yi Zhang, Ruizhi Chengze, Hongsheng Liu, et al.",
-                venue: "Advances in Neural Information Processing Systems (NeurIPS) 2024",
-                type: "AI4Science",
-                description: "We introduce P²C Net, a novel PDE-preserved coarse correction network that efficiently predicts spatiotemporal dynamics. Our method combines coarse-scale predictions with fine-scale corrections while preserving the underlying physical constraints, achieving significant computational speedup without sacrificing accuracy in spatiotemporal modeling tasks.",
-                blogUrl: "#",
-                paperUrl: "https://arxiv.org/pdf/2411.00040",
-                tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
-              },
-              {
-                title: "Deep learning-based reduced order model for three-dimensional unsteady flow using mesh transformation and stitching",
-                authors: "Xin Li, Zhiwen Deng, Rui Feng, Ziyang Liu, Renkun Han, Hongsheng Liu, Gang Chen",
-                venue: "Computers & Fluids 2024",
-                type: "AI4Science",
-                description: "We present a novel deep learning-based reduced order model for three-dimensional unsteady flow simulation. Our approach combines mesh transformation techniques with stitching methods to efficiently model complex fluid dynamics, enabling fast and accurate predictions of unsteady flows while maintaining computational efficiency and physical accuracy.",
-                blogUrl: "#",
-                paperUrl: "https://arxiv.org/pdf/2307.07323",
-                tags: ["AI4Science", "Reduced Order Models", "Deep Learning", "Computational Fluid Dynamics", "Mesh Transformation", "Unsteady Flow", "Scientific ML"]
               },
               {
                 title: "PDEformer: Towards a Foundation Model for One-Dimensional Partial Differential Equations",
@@ -134,9 +130,21 @@ export default function Publications() {
                 description: "We present PDEformer, a transformer-based foundation model designed specifically for solving one-dimensional partial differential equations. By leveraging the transformer architecture's sequence modeling capabilities, our approach demonstrates strong generalization across diverse PDE families and boundary conditions, paving the way for unified neural PDE solvers.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2402.12652",
+                diagramUrl: "/diagrams/pdeformer-architecture.png",
                 tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
               },
               // 2023 Publications
+              {
+                title: "Deep learning-based reduced order model for three-dimensional unsteady flow using mesh transformation and stitching",
+                authors: "Xin Li, Zhiwen Deng, Rui Feng, Ziyang Liu, Renkun Han, Hongsheng Liu, Gang Chen",
+                venue: "Computers & Fluids 2024",
+                type: "AI4Science",
+                description: "We present a novel deep learning-based reduced order model for three-dimensional unsteady flow simulation. Our approach combines mesh transformation techniques with stitching methods to efficiently model complex fluid dynamics, enabling fast and accurate predictions of unsteady flows while maintaining computational efficiency and physical accuracy.",
+                blogUrl: "#",
+                paperUrl: "https://arxiv.org/pdf/2307.07323",
+                diagramUrl: "/diagrams/rom-mesh-transformation.png",
+                tags: ["AI4Science", "Reduced Order Models", "Deep Learning", "Computational Fluid Dynamics", "Mesh Transformation", "Unsteady Flow", "Scientific ML"]
+              },
               {
                 title: "Transportation origin-destination demand estimation with quasi-sparsity",
                 authors: "Jingxing Wang, Shu Lu, Hongsheng Liu, Xuegang Ban",
@@ -145,6 +153,7 @@ export default function Publications() {
                 description: "We propose a novel approach for transportation origin-destination (OD) demand estimation using quasi-sparsity techniques. Our method addresses the challenge of estimating OD flows in transportation networks by leveraging advanced optimization algorithms and sparsity constraints, enabling more accurate and efficient transportation planning and traffic management.",
                 blogUrl: "#",
                 paperUrl: "https://pubsonline.informs.org/doi/abs/10.1287/trsc.2022.1178",
+                diagramUrl: "/diagrams/od-estimation-framework.png",
                 tags: ["Transportation", "Origin-Destination", "Demand Estimation", "Quasi-Sparsity", "Optimization", "Traffic Analysis", "Operations Research"]
               },
               // 2022 Publications
@@ -156,6 +165,7 @@ export default function Publications() {
                 description: "We introduce Meta-auto-decoder, a novel meta-learning framework for solving parametric partial differential equations (PDEs). Our approach combines meta-learning with auto-decoder architectures to efficiently adapt to new PDE parameters and boundary conditions, enabling rapid solution of parametric PDE families with minimal computational overhead and superior generalization capabilities.",
                 blogUrl: "#",
                 paperUrl: "https://proceedings.neurips.cc/paper_files/paper/2022/file/948552777302d3abf92415b1d7e9de70-Paper-Conference.pdf",
+                diagramUrl: "/diagrams/meta-auto-decoder.png",
                 tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
               },
               {
@@ -166,9 +176,10 @@ export default function Publications() {
                 description: "We propose a universal Physics-Informed Neural Networks (PINNs) method for solving partial differential equations with point sources. Our approach addresses the challenge of handling singular point sources in PDEs by developing a novel neural network architecture that can effectively capture the complex behavior around singularities while maintaining high accuracy across the entire domain.",
                 blogUrl: "#",
                 paperUrl: "https://www.ijcai.org/proceedings/2022/0533.pdf",
+                diagramUrl: "/diagrams/universal-pinns.png",
                 tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
               },
-              // 2019 Publications
+              // 2018 Publications
               {
                 title: "Convergence of the augmented decomposition algorithm",
                 authors: "Hongsheng Liu, Shiqian Lu",
@@ -177,6 +188,7 @@ export default function Publications() {
                 description: "We analyze the convergence properties of the augmented decomposition algorithm for solving large-scale optimization problems. Our theoretical analysis provides convergence guarantees and establishes convergence rates for this important class of decomposition methods, with applications to distributed optimization and ML infrastructure.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/1808.08287",
+                diagramUrl: "/diagrams/convergence-analysis.png",
                 tags: ["ML Optimization", "Optimization Theory", "Decomposition Algorithms", "Convergence Analysis", "Distributed Systems", "ML Infrastructure"]
               }
             ].map((publication, index) => (
@@ -254,14 +266,30 @@ export default function Publications() {
                     </div>
                   </div>
                   
-                  {/* Publication Visual/Preview */}
+                  {/* Publication Visual/Diagram */}
                   <div className="lg:w-64 flex-shrink-0">
-                    <div className="w-full h-40 lg:h-full bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white">
-                      <div className="text-center p-4">
-                        <svg className="w-12 h-12 mx-auto mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        <p className="text-sm font-medium opacity-90">Research Paper</p>
+                    <div className="w-full h-40 lg:h-full bg-white dark:bg-slate-700 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 hover:shadow-lg transition-shadow">
+                      {publication.diagramUrl ? (
+                        <img 
+                          src={publication.diagramUrl}
+                          alt={`${publication.title} - Research Diagram`}
+                          className="w-full h-full object-contain p-2 hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            // Fallback to placeholder if image fails to load
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                            const fallback = target.nextSibling as HTMLElement;
+                            if (fallback) fallback.style.display = 'flex';
+                          }}
+                        />
+                      ) : null}
+                      <div className={`w-full h-full bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white ${publication.diagramUrl ? 'hidden' : 'flex'}`}>
+                        <div className="text-center p-4">
+                          <svg className="w-12 h-12 mx-auto mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                          <p className="text-sm font-medium opacity-90">Research Paper</p>
+                        </div>
                       </div>
                     </div>
                   </div>

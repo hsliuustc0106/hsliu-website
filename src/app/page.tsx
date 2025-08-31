@@ -135,10 +135,10 @@ export default function Home() {
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
             
-            1. Committer of the MindSpore open source project.
-            2. Maintainer of MindSpore Science open source project, leading AI4Science 
+            1. Maintainer of MindSpore Science open source project, leading AI4Science 
             initiatives for scientific computing and discovery.
-            3. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.
+            
+            2. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -194,86 +194,145 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-16">
             About Me
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                I&apos;m a Research Scientist at Huawei 2012 Lab with extensive experience in 
-                large language model serving and AI4Science. As a maintainer of the MindScience 
-                repository, I lead AI4Science initiatives and optimize LLM inference systems 
-                like vLLM and vLLM-Ascend for high-performance deployment.
-              </p>
-              
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                With enormous experience in LLM serving technologies and deep expertise as 
-                a MindScience maintainer, I bridge cutting-edge AI4Science research with practical 
-                implementations for scientific computing and model optimization.
-              </p>
-              
-              <div className="flex flex-wrap gap-2">
-                {['LLM Serving', 'vLLM', 'vLLM-Ascend', 'MindScience', 'AI4Science', 'Python', 'C++', 'PyTorch', 'CUDA'].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm">
-                    {skill}
-                  </span>
-                ))}
+          {/* AI4Science Section */}
+          <div className="mb-20">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-6">
+                  AI4Science Research
+                </h3>
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                  As a maintainer of the MindScience repository, I lead Huawei&apos;s flagship AI4Science 
+                  platform with 6 specialized suites and 60+ AI models. My research focuses on 
+                  physics-informed neural networks, scientific computing, and AI-driven solutions 
+                  for complex scientific problems.
+                </p>
+                
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                  My work spans computational fluid dynamics, spatiotemporal modeling, and 
+                  physics-encoded machine learning, achieving breakthrough performance in 
+                  weather forecasting and CFD simulations with 1000x improvements over 
+                  traditional methods.
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {['MindScience', 'AI4Science', 'Physics-informed ML', 'Scientific Computing', 'CFD', 'PDE Solvers'].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-80 h-64 mx-auto bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg flex items-center justify-center p-6">
-                <div className="flex flex-col space-y-6">
-                  {/* MindScience AI4Science Logo */}
-                  <div className="flex justify-center">
-                    <a 
-                      href="https://gitee.com/mindspore/mindscience"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block hover:scale-105 transition-transform cursor-pointer"
-                      title="Visit MindScience Platform on Gitee"
-                    >
-                      <img 
-                        src="/mindscience-icon.svg" 
-                        alt="MindScience AI4Science Logo" 
-                        className="w-24 h-24 object-contain"
-                      />
-                    </a>
-                  </div>
-                  
-                  {/* Divider */}
-                  <div className="flex items-center justify-center">
-                    <div className="h-px bg-gradient-to-r from-transparent via-gray-400 dark:via-gray-500 to-transparent w-16"></div>
-                    <span className="mx-4 text-sm text-gray-500 dark:text-gray-400 font-medium">+</span>
-                    <div className="h-px bg-gradient-to-r from-transparent via-gray-400 dark:via-gray-500 to-transparent w-16"></div>
-                  </div>
-                  
-                  {/* vLLM Logo */}
-                  <div className="flex justify-center">
-                    <a 
-                      href="https://github.com/vllm-project/vllm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block hover:scale-105 transition-transform cursor-pointer"
-                      title="Visit vLLM Project on GitHub"
-                    >
-                      <img 
-                        src="/vllm-log.png" 
-                        alt="vLLM High-Throughput Serving Logo" 
-                        className="w-32 h-16 object-contain"
-                      />
-                    </a>
-                  </div>
-                  
-                  {/* Expertise Labels */}
-                  <div className="text-center space-y-2">
-                    <p className="text-xs text-purple-600 dark:text-purple-400 font-semibold">AI4Science Platform</p>
-                    <p className="text-xs text-blue-600 dark:text-blue-400 font-semibold">LLM Serving Expert</p>
+              
+              <div className="text-center">
+                <div className="w-80 h-64 mx-auto bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg flex items-center justify-center p-6 border border-purple-200 dark:border-purple-700">
+                  <div className="flex flex-col space-y-6">
+                    {/* MindScience AI4Science Logo */}
+                    <div className="flex justify-center">
+                      <a 
+                        href="https://gitee.com/mindspore/mindscience"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block hover:scale-105 transition-transform cursor-pointer"
+                        title="Visit MindScience Platform on Gitee"
+                      >
+                        <img 
+                          src="/mindscience-icon.svg" 
+                          alt="MindScience AI4Science Logo" 
+                          className="w-32 h-32 object-contain"
+                        />
+                      </a>
+                    </div>
+                    
+                    {/* AI4Science Label */}
+                    <div className="text-center">
+                      <p className="text-sm text-purple-600 dark:text-purple-400 font-bold">AI4Science Platform Maintainer</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">6 Specialized Suites • 60+ AI Models</p>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          {/* LLM Serving Section */}
+          <div>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1">
+                <div className="text-center">
+                  <div className="w-80 h-64 mx-auto bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg flex items-center justify-center p-6 border border-blue-200 dark:border-blue-700">
+                    <div className="flex flex-col space-y-6">
+                      {/* vLLM Logo */}
+                      <div className="flex justify-center">
+                        <a 
+                          href="https://github.com/vllm-project/vllm"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block hover:scale-105 transition-transform cursor-pointer"
+                          title="Visit vLLM Project on GitHub"
+                        >
+                          <img 
+                            src="/vllm-log.png" 
+                            alt="vLLM High-Throughput Serving Logo" 
+                            className="w-40 h-20 object-contain"
+                          />
+                        </a>
+                      </div>
+                      
+                      {/* LLM Serving Label */}
+                      <div className="text-center">
+                        <p className="text-sm text-blue-600 dark:text-blue-400 font-bold">LLM Serving Expert</p>
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">vLLM & vLLM-Ascend Specialist</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="order-1 md:order-2">
+                <h3 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-6">
+                  LLM Serving & Infrastructure
+                </h3>
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                  Specialized expertise in large language model serving optimization with 
+                  deep focus on vLLM and vLLM-Ascend systems. I lead research in high-performance 
+                  LLM deployment, inference optimization, and distributed serving architectures 
+                  for production-scale applications.
+                </p>
+                
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                  My work encompasses performance optimization, CUDA acceleration, distributed 
+                  systems design, and ML infrastructure development, bridging cutting-edge 
+                  research with practical implementations for enterprise deployment.
+                </p>
+                
+                <div className="flex flex-wrap gap-2">
+                  {['LLM Serving', 'vLLM', 'vLLM-Ascend', 'Performance Optimization', 'CUDA', 'Distributed Systems'].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Shared Technologies */}
+          <div className="mt-16 text-center">
+            <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+              Core Technologies
+            </h4>
+            <div className="flex flex-wrap justify-center gap-2">
+              {['Python', 'C++', 'PyTorch', 'Machine Learning', 'Deep Learning'].map((tech) => (
+                <span key={tech} className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm border border-gray-200 dark:border-gray-600">
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         </div>
