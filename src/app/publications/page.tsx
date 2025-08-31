@@ -137,17 +137,17 @@ export default function Publications() {
                 paperUrl: "#",
                 tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
               },
-              // Earlier Publications (Year not specified)
               {
                 title: "A Universal PINNs Method for Solving Partial Differential Equations with a Point Source",
                 authors: "Xiang Huang, Hongsheng Liu, Boming Shi, Zidong Wang, Kang Yang, Yang Li, Min Wang, Haotian Chu, Jing Zhou, et al.",
-                venue: "International Joint Conference on Artificial Intelligence (IJCAI)",
+                venue: "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)",
                 type: "AI4Science",
                 description: "We propose a universal Physics-Informed Neural Networks (PINNs) method for solving partial differential equations with point sources. Our approach addresses the challenge of handling singular point sources in PDEs by developing a novel neural network architecture that can effectively capture the complex behavior around singularities while maintaining high accuracy across the entire domain.",
                 blogUrl: "#",
                 paperUrl: "#",
                 tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
               },
+              // Earlier Publications (Year not specified)
               {
                 title: "Convergence of the augmented decomposition algorithm",
                 authors: "Hongsheng Liu, Shiqian Lu",
