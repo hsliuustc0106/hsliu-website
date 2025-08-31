@@ -133,27 +133,6 @@ export default function Home() {
             Research Scientist@Huawei 2012 Lab
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a
-              href="https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium flex items-center justify-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/>
-              </svg>
-              Google Scholar
-            </a>
-
-            <button
-              onClick={() => scrollToSection('projects')}
-              className="px-8 py-3 border border-indigo-600 text-indigo-600 dark:text-indigo-400 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors font-medium"
-            >
-              View My Work
-            </button>
-          </div>
-          
           <div className="flex justify-center space-x-6 mt-12">
             <a href="https://github.com/hsliuustc0106" target="_blank" rel="noopener noreferrer" 
                className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
