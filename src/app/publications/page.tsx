@@ -43,8 +43,11 @@ export default function Publications() {
             <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Publications
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-4">
               Research contributions in AI4Science and ML optimization
+            </p>
+            <p className="text-base text-gray-500 dark:text-gray-400 mb-8">
+              Each publication includes research diagrams and video explanations of key concepts (videos being added progressively)
             </p>
             <div className="flex justify-center">
               <a 
@@ -75,6 +78,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2507.01975",
                 diagramUrl: "/diagrams/Learnable-differentiable Solver.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
               },
               {
@@ -86,6 +90,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2506.10778",
                 diagramUrl: "/diagrams/SlotPi.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Physics-informed ML", "Object-centric Learning", "Slot Attention", "Physical Reasoning"]
               },
               // 2024 Publications
@@ -98,6 +103,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2412.20962",
                 diagramUrl: "/diagrams/conservation-informed.png",
+                videoUrl: "/videos/conservation-informed.mp4", // Video explanation available
                 tags: ["AI4Science", "Graph Learning", "Spatiotemporal Dynamics", "Conservation Laws", "Scientific ML"]
               },
               {
@@ -109,6 +115,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2411.00040",
                 diagramUrl: "/diagrams/P2C2-net.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
               },
               {
@@ -120,6 +127,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2410.01337",
                 diagramUrl: "/diagrams/PHYMPGN.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Graph Neural Networks", "Message Passing", "Physics-encoded", "Spatiotemporal PDEs", "Scientific ML"]
               },
               {
@@ -131,6 +139,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2402.12652",
                 diagramUrl: "/diagrams/pdeformer.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
               },
               // 2023 Publications
@@ -143,6 +152,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2307.07323",
                 diagramUrl: "/diagrams/mesh-transformation.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Reduced Order Models", "Deep Learning", "Computational Fluid Dynamics", "Mesh Transformation", "Unsteady Flow", "Scientific ML"]
               },
               {
@@ -154,6 +164,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://pubsonline.informs.org/doi/abs/10.1287/trsc.2022.1178",
                 diagramUrl: "/diagrams/quasi-sparsity.png",
+                videoUrl: "", // Video will be added later
                 tags: ["Transportation", "Origin-Destination", "Demand Estimation", "Quasi-Sparsity", "Optimization", "Traffic Analysis", "Operations Research"]
               },
               // 2022 Publications
@@ -166,6 +177,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://proceedings.neurips.cc/paper_files/paper/2022/file/948552777302d3abf92415b1d7e9de70-Paper-Conference.pdf",
                 diagramUrl: "/diagrams/meta-auto-decoder.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
               },
               {
@@ -177,6 +189,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://www.ijcai.org/proceedings/2022/0533.pdf",
                 diagramUrl: "/diagrams/universal-pinns.png",
+                videoUrl: "", // Video will be added later
                 tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
               },
               // 2018 Publications
@@ -189,6 +202,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/1808.08287",
                 diagramUrl: "/diagrams/convergence-of-ADA.png",
+                videoUrl: "", // Video will be added later
                 tags: ["ML Optimization", "Optimization Theory", "Decomposition Algorithms", "Convergence Analysis", "Distributed Systems", "ML Infrastructure"]
               }
             ].map((publication, index) => (
@@ -241,6 +255,26 @@ export default function Publications() {
                         </svg>
                         Read Blog Post
                       </a>
+                      {publication.videoUrl ? (
+                        <a 
+                          href={publication.videoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium"
+                        >
+                          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h10a2 2 0 002-2V8a2 2 0 00-2-2H8a2 2 0 00-2 2v4a2 2 0 002 2z" />
+                          </svg>
+                          Video Explanation
+                        </a>
+                      ) : (
+                        <div className="inline-flex items-center px-4 py-2 bg-gray-400 text-white rounded-lg cursor-not-allowed text-sm font-medium opacity-60">
+                          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h10a2 2 0 002-2V8a2 2 0 00-2-2H8a2 2 0 00-2 2v4a2 2 0 002 2z" />
+                          </svg>
+                          Video Coming Soon
+                        </div>
+                      )}
                       <a 
                         href={publication.paperUrl}
                         target="_blank"
