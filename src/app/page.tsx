@@ -268,17 +268,17 @@ export default function Home() {
           </h2>
           
           <div className="space-y-8">
-            {/* Publication Template - Replace with actual publications */}
+            {/* Publication Cards */}
             {[
               {
-                title: "Your Publication Title Here",
-                authors: "Hongsheng Liu, Co-Author 1, Co-Author 2",
-                venue: "Conference/Journal Name 2024",
-                type: "AI4Science", // or "LLM Serving", "Optimization", etc.
-                description: "Brief introduction to your publication will go here. This should be 2-3 sentences explaining the key contribution and impact of your work.",
-                blogUrl: "#", // Link to your detailed blog post
-                paperUrl: "#", // Link to the actual paper
-                tags: ["AI4Science", "MindScience", "Scientific Computing"]
+                title: "Conservation-informed Graph Learning for Spatiotemporal Dynamics Prediction",
+                authors: "Yuan Mi, Pu Ren, Hongteng Xu, Hongsheng Liu, Zidong Wang, Yike Guo, Ji-Rong Wen, Hao Sun, Yang Liu",
+                venue: "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025",
+                type: "AI4Science",
+                description: "We present a novel conservation-informed graph learning approach for predicting spatiotemporal dynamics in complex systems. By incorporating physical conservation laws into graph neural networks, our method achieves superior accuracy in modeling spatiotemporal phenomena while maintaining physical consistency, advancing the field of AI4Science.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Graph Learning", "Spatiotemporal Dynamics", "Conservation Laws", "Scientific ML"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
