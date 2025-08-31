@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'projects', 'contact'];
+      const sections = ['home', 'about', 'experience', 'publications', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -49,7 +49,7 @@ export default function Home() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'experience', 'projects', 'contact'].map((section) => (
+              {['home', 'about', 'experience', 'publications', 'projects', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -86,7 +86,7 @@ export default function Home() {
           {/* Mobile Navigation */}
           {isMenuOpen && (
             <div className="md:hidden pb-4">
-              {['home', 'about', 'experience', 'projects', 'contact'].map((section) => (
+              {['home', 'about', 'experience', 'publications', 'projects', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -256,6 +256,135 @@ export default function Home() {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Publications Section */}
+      <section id="publications" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Selected Publications
+          </h2>
+          
+          <div className="space-y-8">
+            {/* Publication Template - Replace with actual publications */}
+            {[
+              {
+                title: "Your Publication Title Here",
+                authors: "Hongsheng Liu, Co-Author 1, Co-Author 2",
+                venue: "Conference/Journal Name 2024",
+                type: "AI4Science", // or "LLM Serving", "Optimization", etc.
+                description: "Brief introduction to your publication will go here. This should be 2-3 sentences explaining the key contribution and impact of your work.",
+                blogUrl: "#", // Link to your detailed blog post
+                paperUrl: "#", // Link to the actual paper
+                tags: ["AI4Science", "MindScience", "Scientific Computing"]
+              }
+              // Add more publications as needed
+            ].map((publication, index) => (
+              <div key={index} className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700">
+                <div className="flex flex-col lg:flex-row gap-6">
+                  {/* Publication Info */}
+                  <div className="flex-1">
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex-1">
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 leading-tight">
+                          {publication.title}
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+                          <span className="font-medium">Authors:</span> {publication.authors}
+                        </p>
+                        <p className="text-sm text-indigo-600 dark:text-indigo-400 font-medium mb-3">
+                          {publication.venue}
+                        </p>
+                      </div>
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                        publication.type === 'AI4Science' ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300' :
+                        publication.type === 'LLM Serving' ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300' :
+                        'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300'
+                      }`}>
+                        {publication.type}
+                      </span>
+                    </div>
+                    
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                      {publication.description}
+                    </p>
+                    
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {publication.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-xs">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    
+                    {/* Action Buttons */}
+                    <div className="flex flex-wrap gap-3">
+                      <a 
+                        href={publication.blogUrl}
+                        className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors text-sm font-medium"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        Read Blog Post
+                      </a>
+                      <a 
+                        href={publication.paperUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm font-medium"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        View Paper
+                      </a>
+                      <a 
+                        href="https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 border border-purple-300 dark:border-purple-600 text-purple-700 dark:text-purple-300 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors text-sm font-medium"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/>
+                        </svg>
+                        Citation
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Publication Visual/Preview */}
+                  <div className="lg:w-64 flex-shrink-0">
+                    <div className="w-full h-40 lg:h-full bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white">
+                      <div className="text-center p-4">
+                        <svg className="w-12 h-12 mx-auto mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <p className="text-sm font-medium opacity-90">Research Paper</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* View All Publications Link */}
+          <div className="text-center mt-12">
+            <a 
+              href="https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium"
+            >
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/>
+              </svg>
+              View All Publications on Google Scholar
+            </a>
           </div>
         </div>
       </section>
