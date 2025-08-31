@@ -292,8 +292,8 @@ export default function Home() {
               },
               {
                 title: "Learnable-Differentiable Finite Volume Solver for Accelerated Simulation of Flows",
-                authors: "Hongsheng Liu, et al.",
-                venue: "To be announced",
+                authors: "Mengtao Yan, Qi Wang, Haining Wang, Ruizhi Chengze, Yi Zhang, Hongsheng Liu, Zidong Wang, Fan Yu, Qi Qi, Hao Sun",
+                venue: "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025",
                 type: "AI4Science",
                 description: "We present a novel learnable-differentiable finite volume solver that significantly accelerates computational fluid dynamics simulations. By combining traditional finite volume methods with differentiable programming and machine learning techniques, our approach enables end-to-end optimization of flow simulations while maintaining physical accuracy and computational efficiency.",
                 blogUrl: "#", // Will be updated when blog post is ready
