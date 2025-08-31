@@ -114,13 +114,13 @@ export default function Home() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            ML Infrastructure Engineer & Open Source Contributor
+            AI Infrastructure Engineer • AI4Science Researcher • Open Source Contributor
           </p>
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            I specialize in machine learning infrastructure and contribute to open-source projects 
-            like vLLM. Passionate about optimizing large language models and building scalable 
-            ML systems.
+            I specialize in AI infrastructure and AI4Science research. Contributing to open-source projects 
+            like vLLM while conducting research at the intersection of AI and scientific computing. 
+            Passionate about optimizing ML systems and advancing scientific discovery through AI.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -143,6 +143,12 @@ export default function Home() {
                className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer"
+               className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/>
               </svg>
             </a>
             <a href="https://linkedin.com/in/hsliu" target="_blank" rel="noopener noreferrer"
@@ -171,19 +177,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                I&apos;m a passionate software engineer specializing in machine learning infrastructure 
-                and high-performance computing. I contribute to open-source projects like vLLM, 
-                focusing on optimizing large language model serving and inference.
+                I&apos;m a passionate researcher and engineer working at the intersection of AI infrastructure 
+                and AI4Science. I contribute to open-source projects like vLLM, focusing on optimizing 
+                large language model serving and inference for scientific applications.
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                With expertise in distributed systems, AI/ML frameworks, and performance optimization, 
-                I enjoy solving complex technical challenges and building scalable solutions for 
-                machine learning workloads.
+                My research spans AI4Science, AIGC, and optimization, with expertise in distributed 
+                systems and high-performance computing. I enjoy bridging the gap between cutting-edge 
+                AI research and practical scientific applications.
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['Python', 'C++', 'PyTorch', 'vLLM', 'CUDA', 'Distributed Systems', 'Machine Learning', 'Performance Optimization'].map((skill) => (
+                {['Python', 'C++', 'PyTorch', 'vLLM', 'CUDA', 'AI4Science', 'AIGC', 'Optimization', 'Distributed Systems'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -210,27 +216,29 @@ export default function Home() {
           <div className="space-y-8">
             <div className="border-l-4 border-indigo-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Software Engineer - ML Infrastructure
+                AI Infrastructure Engineer & AI4Science Researcher
               </h3>
               <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Developing and optimizing machine learning infrastructure, with focus on 
-                large language model serving and inference optimization. Contributing to 
-                open-source projects like vLLM to improve performance and scalability 
-                of ML workloads.
+                Leading research in AI4Science, AIGC, and optimization while developing 
+                machine learning infrastructure. Contributing to open-source projects like vLLM 
+                to improve performance and scalability of ML workloads for scientific applications.
               </p>
               <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  AI4Science
+                </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   ML Infrastructure
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Performance Optimization
+                  AIGC Research
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Open Source Contribution
+                  vLLM Contributor
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  vLLM
+                  Optimization
                 </span>
               </div>
             </div>
@@ -249,18 +257,18 @@ export default function Home() {
             {/* Project placeholders - you can customize these */}
             {[
               { 
+                title: 'AI4Science Research', 
+                desc: 'Research at the intersection of AI and scientific computing, with focus on AIGC and optimization for scientific applications',
+                link: 'https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN'
+              },
+              { 
                 title: 'vLLM Contributions', 
                 desc: 'Contributing to vLLM, an open-source library for fast LLM inference and serving with performance optimizations',
                 link: 'https://github.com/vllm-project/vllm'
               },
               { 
                 title: 'ML Infrastructure', 
-                desc: 'Building scalable machine learning infrastructure for large language model deployment and optimization',
-                link: '#'
-              },
-              { 
-                title: 'Performance Optimization', 
-                desc: 'Developing solutions for high-performance computing and distributed systems in ML workloads',
+                desc: 'Building scalable machine learning infrastructure for large language model deployment in scientific contexts',
                 link: '#'
               }
             ].map((project, index) => (
