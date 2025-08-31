@@ -309,6 +309,16 @@ export default function Home() {
                 blogUrl: "#", // Will be updated when blog post is ready
                 paperUrl: "#", // Will be updated with actual paper link
                 tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
+              },
+              {
+                title: "PDEformer: Towards a Foundation Model for One-Dimensional Partial Differential Equations",
+                authors: "Zhanhong Ye, Xiang Huang, Lei Chen, Hongsheng Liu, Zidong Wang, Bin Dong",
+                venue: "International Conference on Learning Representations (ICLR) 2024 Workshops",
+                type: "AI4Science",
+                description: "We present PDEformer, a transformer-based foundation model designed specifically for solving one-dimensional partial differential equations. By leveraging the transformer architecture's sequence modeling capabilities, our approach demonstrates strong generalization across diverse PDE families and boundary conditions, paving the way for unified neural PDE solvers.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
