@@ -1,27 +1,41 @@
 # Hongsheng Liu - Personal Website
 
-A modern, responsive personal website built with Next.js and Tailwind CSS. This website showcases professional information, experience, projects, and contact details.
+A comprehensive personal website for Research Scientist Hongsheng Liu, showcasing professional experience, research publications, AI4Science projects, and academic achievements. Built with Next.js and deployed on GitHub Pages.
 
 ## 🌟 Features
 
-- **Modern Design**: Clean, professional layout with smooth animations
-- **Responsive**: Fully responsive design that works on all devices
-- **Fast**: Built with Next.js for optimal performance
-- **GitHub Pages Ready**: Configured for easy deployment to GitHub Pages
-- **SEO Optimized**: Proper meta tags and structure for search engines
+- **Professional Portfolio**: Complete showcase of research experience at Huawei 2012 Lab
+- **Publications Gallery**: Dedicated page with 9 research publications from top venues (KDD, NeurIPS, ICLR, IJCAI)
+- **Project Showcase**: Hierarchical display of MindScience platform and specialized suites
+- **Educational Timeline**: PhD in Statistics & Operations Research (UNC Chapel Hill) and Bachelor's in Mathematical Statistics (USTC)
+- **Visitor Analytics**: Real-time visitor counter across all pages
+- **Responsive Design**: Mobile-first design with dark mode support
+- **SEO Optimized**: Proper meta tags and structured data
+- **Fast Performance**: Static site generation with Next.js
+- **Custom Branding**: Professional MindScience logo integration
+
+## 🎯 Live Website
+
+**Primary URL**: [https://hsliuustc0106.github.io](https://hsliuustc0106.github.io)
+
+### Page Structure:
+- **Home**: Professional overview and experience timeline
+- **Publications**: Complete research portfolio with 9 publications
+- **Projects**: MindScience platform and specialized suites showcase
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js 18.x or later
-- npm or yarn
+- Node.js 24.7.0 or later (currently using 24.7.0)
+- npm package manager
+- Git with SSH authentication
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hsliuustc0106/hsliu-website.git
+git clone git@github.com:hsliuustc0106/hsliuustc0106.github.io.git
 cd hsliu-website
 ```
 
@@ -37,123 +51,129 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📦 Deployment to GitHub Pages
+## 📦 Deployment
 
-### Method 1: Automatic Deployment (Recommended)
+### Current Setup: GitHub User Pages
 
-1. **Create a GitHub Repository**:
-   - Go to [GitHub](https://github.com) and create a new repository
-   - For personal website: name it `username.github.io` (replace `username` with your GitHub username)
-   - For project website: name it whatever you like (e.g., `hsliu-website`)
+This website is deployed using GitHub User Pages for clean URLs without repository path:
 
-2. **Push your code to GitHub**:
-   ```bash
-   git remote add origin https://github.com/hsliuustc0106/hsliu-website.git
-   git branch -M main
-   git push -u origin main
-   ```
+1. **Repository**: `hsliuustc0106.github.io`
+2. **Deployment**: Automatic via GitHub Actions
+3. **URL Structure**: Clean URLs (e.g., `/publications/`, `/projects/`)
+4. **Configuration**: No base path required
 
-3. **Enable GitHub Pages**:
-   - Go to your repository on GitHub
-   - Click on **Settings** tab
-   - Scroll down to **Pages** section
-   - Under **Source**, select **GitHub Actions**
-   - The GitHub Actions workflow will automatically deploy your site
+### Build and Deploy
 
-4. **Access Your Website**:
-   - For `username.github.io` repo: `https://username.github.io`
-   - For project repos like yours: `https://hsliuustc0106.github.io/hsliu-website`
-
-### Method 2: Manual Build and Deploy
-
-1. Build the static site:
 ```bash
+# Build the static site
 npm run build
+
+# Commit and push changes
+git add .
+git commit -m "Update website content"
+git push
 ```
 
-2. The built files will be in the `out` directory
-3. Upload the contents of `out` directory to your web hosting service
+GitHub Actions automatically deploys changes to the live site.
 
-## 🛠️ Customization
-
-### Personal Information
-
-Edit the following files to customize with your information:
-
-- `src/app/page.tsx` - Main content, sections, and personal details
-- `src/app/layout.tsx` - Meta tags, title, and description
-- `public/` - Add your images, resume, etc.
-
-### Styling
-
-The website uses Tailwind CSS for styling. You can customize:
-
-- Colors and themes in `tailwind.config.js`
-- Global styles in `src/app/globals.css`
-- Component styles directly in the TSX files
-
-### Adding Projects
-
-To add your real projects, edit the projects section in `src/app/page.tsx`:
-
-```tsx
-// Replace the placeholder projects array with your real projects
-const projects = [
-  {
-    title: "Your Project Name",
-    description: "Project description",
-    technologies: ["React", "Node.js", "MongoDB"],
-    liveUrl: "https://your-project.com",
-    githubUrl: "https://github.com/yourusername/project"
-  },
-  // Add more projects...
-];
-```
-
-## 📁 Project Structure
+## 🛠️ Project Structure
 
 ```
 hsliu-website/
 ├── .github/workflows/
-│   └── deploy.yml          # GitHub Actions deployment workflow
+│   └── deploy.yml              # GitHub Actions deployment
 ├── public/
-│   ├── .nojekyll          # Prevents Jekyll processing
-│   └── favicon.ico        # Website favicon
-├── src/
-│   └── app/
-│       ├── globals.css    # Global styles
-│       ├── layout.tsx     # Root layout and metadata
-│       └── page.tsx       # Main page component
-├── .gitignore
-├── README.md
-├── next.config.ts         # Next.js configuration
+│   ├── mindscience-icon.svg    # Custom MindScience logo (compact)
+│   ├── mindscience-logo.svg    # Custom MindScience logo (full)
+│   └── .nojekyll              # GitHub Pages configuration
+├── src/app/
+│   ├── publications/
+│   │   └── page.tsx           # Publications showcase page
+│   ├── projects/
+│   │   └── page.tsx           # Projects showcase page
+│   ├── globals.css            # Global styles
+│   ├── layout.tsx             # Site metadata and layout
+│   └── page.tsx               # Home page with experience timeline
+├── next.config.ts             # Next.js configuration (no basePath)
 ├── package.json
-├── tailwind.config.js     # Tailwind CSS configuration
-└── tsconfig.json          # TypeScript configuration
+├── tailwind.config.js         # Tailwind CSS configuration
+└── tsconfig.json
 ```
+
+## 📊 Content Overview
+
+### Professional Experience
+- **Current**: Research Scientist at Huawei 2012 Lab (2021-Present)
+- **Location**: Mainland China
+- **Focus**: LLM Serving optimization, vLLM, Dynamo, AI4Science
+- **Role**: MindScience repository maintainer
+
+### Education
+- **PhD**: Statistics and Operations Research, UNC Chapel Hill (2015-2020)
+- **Bachelor's**: Mathematical Statistics, School for the Gifted Young, USTC (2011-2015)
+
+### Research Publications (9 Total)
+- **Venues**: KDD 2025, NeurIPS 2022/2024, ICLR 2024/2025, IJCAI
+- **Categories**: AI4Science (8), LLM Serving (1)
+- **Topics**: Graph learning, physics-informed ML, PDE solvers, optimization
+
+### Projects
+- **MindScience Platform**: Main project with 6 specialized suites
+  - **MindEarth**: Weather forecasting and earth sciences
+  - **MindFlow**: Computational fluid dynamics
+  - **MindSPONGE**: Computational biology and molecular simulation
+- **LLM Serving Research**: vLLM and Dynamo optimization
+- **AI4Science Publications**: Research portfolio
 
 ## 🔧 Technologies Used
 
-- **Next.js 15** - React framework for production
-- **React 18** - JavaScript library for building user interfaces
-- **TypeScript** - Typed superset of JavaScript
-- **Tailwind CSS** - Utility-first CSS framework
-- **GitHub Actions** - CI/CD for automated deployment
-- **GitHub Pages** - Free static site hosting
+- **Frontend**: Next.js 15, React 18, TypeScript
+- **Styling**: Tailwind CSS with dark mode support
+- **Deployment**: GitHub Pages with GitHub Actions
+- **Analytics**: Visitor counter (visitor-badge.laobi.icu)
+- **Assets**: Custom SVG logos for MindScience branding
+- **Development**: Node.js 24.7.0, npm
 
-## 📝 License
+## 🎨 Design Features
+
+- **Color Coding**: AI4Science (purple), LLM Serving (blue), Research (green)
+- **Custom Logos**: Professional MindScience branding
+- **Responsive Layout**: Mobile-first design
+- **Dark Mode**: Full theme support
+- **Typography**: Professional academic styling
+- **Navigation**: Consistent across all pages
+
+## 📈 Analytics
+
+- **Visitor Counter**: Real-time tracking across all pages
+- **Page ID**: `hsliuustc0106.github.io`
+- **Service**: visitor-badge.laobi.icu
+- **Display**: Professional badge in footer
+
+## 🔗 External Links
+
+- **Google Scholar**: [M7ag7rIAAAAJ](https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN)
+- **MindScience Repository**: [Gitee](https://gitee.com/mindspore/mindscience)
+- **GitHub Profile**: [hsliuustc0106](https://github.com/hsliuustc0106)
+- **Email**: liuhongsheng4@huawei.com
+
+## 📝 Recent Updates
+
+- ✅ Repository renamed to `hsliuustc0106.github.io` for clean URLs
+- ✅ Added comprehensive publications page with 9 research papers
+- ✅ Reorganized projects with MindScience hierarchy
+- ✅ Updated educational background with Mathematical Statistics degree
+- ✅ Added visitor counter across all pages
+- ✅ Enhanced footer with GitHub links and analytics
+- ✅ Fixed all Gitee repository links for MindScience suites
+
+## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
 ---
 
-**Contact**: [liuhongsheng4@huawei.com](mailto:liuhongsheng4@huawei.com)
-
-**Live Website**: https://hsliuustc0106.github.io/hsliu-website
-
-🌟 **Status**: Deploying... (GitHub Pages configuration required)
+**Contact**: [liuhongsheng4@huawei.com](mailto:liuhongsheng4@huawei.com)  
+**Website**: [https://hsliuustc0106.github.io](https://hsliuustc0106.github.io)  
+**Status**: ✅ Live and Active
 
