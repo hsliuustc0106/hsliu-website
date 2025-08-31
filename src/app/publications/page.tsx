@@ -64,6 +64,7 @@ export default function Publications() {
           <div className="space-y-8">
             {/* Publication Cards */}
             {[
+              // 2025 Publications
               {
                 title: "Conservation-informed Graph Learning for Spatiotemporal Dynamics Prediction",
                 authors: "Yuan Mi, Pu Ren, Hongteng Xu, Hongsheng Liu, Zidong Wang, Yike Guo, Ji-Rong Wen, Hao Sun, Yang Liu",
@@ -95,35 +96,16 @@ export default function Publications() {
                 tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
               },
               {
-                title: "Meta-auto-decoder for solving parametric partial differential equations",
-                authors: "Xiang Huang, Zhanhong Ye, Hongsheng Liu, Shi Ji, Zidong Wang, Kang Yang, Yang Li, Min Wang, Haotian Chu, Fan Yu, Bei Hua, Lei Chen, Bin Dong",
-                venue: "Advances in Neural Information Processing Systems (NeurIPS) 2022",
+                title: "PhyMPGN: Physics-encoded Message Passing Graph Network for spatiotemporal PDE systems",
+                authors: "Bindi Zeng, Qi Wang, Mengtao Yan, Yang Liu, Ruizhi Chengze, Yi Zhang, Hongsheng Liu, Zidong Wang, et al.",
+                venue: "International Conference on Learning Representations (ICLR) 2025",
                 type: "AI4Science",
-                description: "We introduce Meta-auto-decoder, a novel meta-learning framework for solving parametric partial differential equations (PDEs). Our approach combines meta-learning with auto-decoder architectures to efficiently adapt to new PDE parameters and boundary conditions, enabling rapid solution of parametric PDE families with minimal computational overhead and superior generalization capabilities.",
+                description: "We present PhyMPGN, a physics-encoded message passing graph network designed for solving spatiotemporal PDE systems. Our approach integrates physical principles directly into the message passing framework, enabling more accurate and physically consistent predictions for complex spatiotemporal dynamics while maintaining computational efficiency.",
                 blogUrl: "#",
                 paperUrl: "#",
-                tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
+                tags: ["AI4Science", "Graph Neural Networks", "Message Passing", "Physics-encoded", "Spatiotemporal PDEs", "Scientific ML"]
               },
-              {
-                title: "PDEformer: Towards a Foundation Model for One-Dimensional Partial Differential Equations",
-                authors: "Zhanhong Ye, Xiang Huang, Lei Chen, Hongsheng Liu, Zidong Wang, Bin Dong",
-                venue: "International Conference on Learning Representations (ICLR) 2024 Workshops",
-                type: "AI4Science",
-                description: "We present PDEformer, a transformer-based foundation model designed specifically for solving one-dimensional partial differential equations. By leveraging the transformer architecture's sequence modeling capabilities, our approach demonstrates strong generalization across diverse PDE families and boundary conditions, paving the way for unified neural PDE solvers.",
-                blogUrl: "#",
-                paperUrl: "#",
-                tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
-              },
-              {
-                title: "A Universal PINNs Method for Solving Partial Differential Equations with a Point Source",
-                authors: "Xiang Huang, Hongsheng Liu, Boming Shi, Zidong Wang, Kang Yang, Yang Li, Min Wang, Haotian Chu, Jing Zhou, et al.",
-                venue: "International Joint Conference on Artificial Intelligence (IJCAI)",
-                type: "AI4Science",
-                description: "We propose a universal Physics-Informed Neural Networks (PINNs) method for solving partial differential equations with point sources. Our approach addresses the challenge of handling singular point sources in PDEs by developing a novel neural network architecture that can effectively capture the complex behavior around singularities while maintaining high accuracy across the entire domain.",
-                blogUrl: "#",
-                paperUrl: "#",
-                tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
-              },
+              // 2024 Publications
               {
                 title: "P²C Net: PDE-Preserved Coarse Correction Network for efficient prediction of spatiotemporal dynamics",
                 authors: "Qi Wang, Pu Ren, Haoyu Zhou, Xiao-Yu Liu, Zidong Deng, Yi Zhang, Ruizhi Chengze, Hongsheng Liu, et al.",
@@ -135,14 +117,36 @@ export default function Publications() {
                 tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
               },
               {
-                title: "PhyMPGN: Physics-encoded Message Passing Graph Network for spatiotemporal PDE systems",
-                authors: "Bindi Zeng, Qi Wang, Mengtao Yan, Yang Liu, Ruizhi Chengze, Yi Zhang, Hongsheng Liu, Zidong Wang, et al.",
-                venue: "International Conference on Learning Representations (ICLR) 2025",
+                title: "PDEformer: Towards a Foundation Model for One-Dimensional Partial Differential Equations",
+                authors: "Zhanhong Ye, Xiang Huang, Lei Chen, Hongsheng Liu, Zidong Wang, Bin Dong",
+                venue: "International Conference on Learning Representations (ICLR) 2024 Workshops",
                 type: "AI4Science",
-                description: "We present PhyMPGN, a physics-encoded message passing graph network designed for solving spatiotemporal PDE systems. Our approach integrates physical principles directly into the message passing framework, enabling more accurate and physically consistent predictions for complex spatiotemporal dynamics while maintaining computational efficiency.",
+                description: "We present PDEformer, a transformer-based foundation model designed specifically for solving one-dimensional partial differential equations. By leveraging the transformer architecture's sequence modeling capabilities, our approach demonstrates strong generalization across diverse PDE families and boundary conditions, paving the way for unified neural PDE solvers.",
                 blogUrl: "#",
                 paperUrl: "#",
-                tags: ["AI4Science", "Graph Neural Networks", "Message Passing", "Physics-encoded", "Spatiotemporal PDEs", "Scientific ML"]
+                tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
+              },
+              // 2022 Publications
+              {
+                title: "Meta-auto-decoder for solving parametric partial differential equations",
+                authors: "Xiang Huang, Zhanhong Ye, Hongsheng Liu, Shi Ji, Zidong Wang, Kang Yang, Yang Li, Min Wang, Haotian Chu, Fan Yu, Bei Hua, Lei Chen, Bin Dong",
+                venue: "Advances in Neural Information Processing Systems (NeurIPS) 2022",
+                type: "AI4Science",
+                description: "We introduce Meta-auto-decoder, a novel meta-learning framework for solving parametric partial differential equations (PDEs). Our approach combines meta-learning with auto-decoder architectures to efficiently adapt to new PDE parameters and boundary conditions, enabling rapid solution of parametric PDE families with minimal computational overhead and superior generalization capabilities.",
+                blogUrl: "#",
+                paperUrl: "#",
+                tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
+              },
+              // Earlier Publications (Year not specified)
+              {
+                title: "A Universal PINNs Method for Solving Partial Differential Equations with a Point Source",
+                authors: "Xiang Huang, Hongsheng Liu, Boming Shi, Zidong Wang, Kang Yang, Yang Li, Min Wang, Haotian Chu, Jing Zhou, et al.",
+                venue: "International Joint Conference on Artificial Intelligence (IJCAI)",
+                type: "AI4Science",
+                description: "We propose a universal Physics-Informed Neural Networks (PINNs) method for solving partial differential equations with point sources. Our approach addresses the challenge of handling singular point sources in PDEs by developing a novel neural network architecture that can effectively capture the complex behavior around singularities while maintaining high accuracy across the entire domain.",
+                blogUrl: "#",
+                paperUrl: "#",
+                tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
               },
               {
                 title: "Convergence of the augmented decomposition algorithm",
