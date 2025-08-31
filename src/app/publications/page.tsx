@@ -130,7 +130,7 @@ export default function Publications() {
                 description: "We present PDEformer, a transformer-based foundation model designed specifically for solving one-dimensional partial differential equations. By leveraging the transformer architecture's sequence modeling capabilities, our approach demonstrates strong generalization across diverse PDE families and boundary conditions, paving the way for unified neural PDE solvers.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2402.12652",
-                diagramUrl: "/diagrams/pdeformer-architecture.png",
+                diagramUrl: "/diagrams/pdeformer.png",
                 tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
               },
               // 2023 Publications
