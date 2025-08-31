@@ -430,8 +430,8 @@ export default function Home() {
             {/* Project placeholders - you can customize these */}
             {[
               { 
-                title: 'MindScience Maintainer', 
-                desc: 'Maintainer of MindScience repository - leading AI4Science platform for scientific computing and discovery applications',
+                title: 'MindScience Platform', 
+                desc: 'Lead maintainer of Huawei\'s flagship AI4Science platform, enabling breakthrough scientific computing across Earth sciences, fluid dynamics, electromagnetics, chemistry, and biology. Features 6 specialized suites (MindEarth, MindFlow, MindElec, MindChemistry, MindSPONGE, SciAI) with 60+ AI models, achieving 1000x performance improvements over traditional methods in weather forecasting and CFD simulations.',
                 link: 'https://gitee.com/mindspore/mindscience'
               },
               { 
