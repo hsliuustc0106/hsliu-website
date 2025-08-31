@@ -258,7 +258,7 @@ export default function Home() {
                       title="Visit vLLM Project on GitHub"
                     >
                       <img 
-                        src="/vllm-logo.png" 
+                        src="/vllm-log.png" 
                         alt="vLLM High-Throughput Serving Logo" 
                         className="w-32 h-16 object-contain"
                       />
