@@ -133,14 +133,6 @@ export default function Home() {
             Research Scientist@Huawei 2012 Lab
           </p>
           
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            
-            1. Maintainer of MindSpore Science open source project, leading AI4Science 
-            initiatives for scientific computing and discovery.
-            
-            2. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.
-          </p>
-          
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
               href="https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN"
@@ -352,14 +344,10 @@ export default function Home() {
                 Research Scientist
               </h3>
               <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab • Present</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                1. Maintainer of MindSpore Science open source project, leading AI4Science 
-                initiatives for scientific computing and discovery.
-                
-                2. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.
-                
-                Bringing rich experience with Ascend NPU architecture and optimization.
-              </p>
+              <div className="text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+                <p>1. Maintainer of MindSpore Science open source project, leading AI4Science initiatives for scientific computing and discovery.</p>
+                <p>2. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.</p>
+              </div>
               <div className="flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   MindScience Maintainer
