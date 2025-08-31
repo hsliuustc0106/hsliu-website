@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'publications', 'projects', 'contact'];
+      const sections = ['home', 'about', 'experience', 'publications', 'projects'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -49,7 +49,7 @@ export default function Home() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'experience', 'publications', 'projects', 'contact'].map((section) => (
+              {['home', 'about', 'experience', 'publications', 'projects'].map((section) => (
                 <button
                   key={section}
                   onClick={() => {
@@ -94,7 +94,7 @@ export default function Home() {
           {/* Mobile Navigation */}
           {isMenuOpen && (
             <div className="md:hidden pb-4">
-              {['home', 'about', 'experience', 'publications', 'projects', 'contact'].map((section) => (
+              {['home', 'about', 'experience', 'publications', 'projects'].map((section) => (
                 <button
                   key={section}
                   onClick={() => {
@@ -135,7 +135,7 @@ export default function Home() {
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
             Research Scientist at Huawei 2012 Lab and maintainer of MindScience repository. 
-            Specialized expertise in LLM Serving (vLLM & Dynamo) and leading AI4Science 
+            Specialized expertise in LLM Serving (vLLM & vLLM-Ascend) and leading AI4Science 
             initiatives for scientific computing and discovery.
           </p>
           
@@ -151,12 +151,7 @@ export default function Home() {
               </svg>
               Google Scholar
             </a>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium"
-            >
-              Get In Touch
-            </button>
+
             <button
               onClick={() => scrollToSection('projects')}
               className="px-8 py-3 border border-indigo-600 text-indigo-600 dark:text-indigo-400 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors font-medium"
@@ -208,7 +203,7 @@ export default function Home() {
                 I&apos;m a Research Scientist at Huawei 2012 Lab with extensive experience in 
                 large language model serving and AI4Science. As a maintainer of the MindScience 
                 repository, I lead AI4Science initiatives and optimize LLM inference systems 
-                like vLLM and Dynamo for high-performance deployment.
+                like vLLM and vLLM-Ascend for high-performance deployment.
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
@@ -218,7 +213,7 @@ export default function Home() {
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['LLM Serving', 'vLLM', 'Dynamo', 'MindScience', 'AI4Science', 'Python', 'C++', 'PyTorch', 'CUDA'].map((skill) => (
+                {['LLM Serving', 'vLLM', 'vLLM-Ascend', 'MindScience', 'AI4Science', 'Python', 'C++', 'PyTorch', 'CUDA'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -227,8 +222,55 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="w-64 h-64 mx-auto bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-6xl font-bold">
-                HL
+              <div className="w-80 h-64 mx-auto bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg flex items-center justify-center p-6">
+                <div className="flex flex-col space-y-6">
+                  {/* MindScience AI4Science Logo */}
+                  <div className="flex justify-center">
+                    <a 
+                      href="https://gitee.com/mindspore/mindscience"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block hover:scale-105 transition-transform cursor-pointer"
+                      title="Visit MindScience Platform on Gitee"
+                    >
+                      <img 
+                        src="/mindscience-icon.svg" 
+                        alt="MindScience AI4Science Logo" 
+                        className="w-24 h-24 object-contain"
+                      />
+                    </a>
+                  </div>
+                  
+                  {/* Divider */}
+                  <div className="flex items-center justify-center">
+                    <div className="h-px bg-gradient-to-r from-transparent via-gray-400 dark:via-gray-500 to-transparent w-16"></div>
+                    <span className="mx-4 text-sm text-gray-500 dark:text-gray-400 font-medium">+</span>
+                    <div className="h-px bg-gradient-to-r from-transparent via-gray-400 dark:via-gray-500 to-transparent w-16"></div>
+                  </div>
+                  
+                  {/* vLLM Logo */}
+                  <div className="flex justify-center">
+                    <a 
+                      href="https://github.com/vllm-project/vllm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block hover:scale-105 transition-transform cursor-pointer"
+                      title="Visit vLLM Project on GitHub"
+                    >
+                      <img 
+                        src="/vllm-logo.png" 
+                        alt="vLLM High-Throughput Serving Logo" 
+                        className="w-32 h-16 object-contain"
+                      />
+                    </a>
+                  </div>
+                  
+                  {/* Expertise Labels */}
+                  <div className="text-center space-y-2">
+                    <p className="text-xs text-purple-600 dark:text-purple-400 font-semibold">AI4Science Platform</p>
+                    <p className="text-xs text-blue-600 dark:text-blue-400 font-semibold">LLM Serving Expert</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -250,7 +292,7 @@ export default function Home() {
               <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab • Present</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Leading research in LLM Serving optimization with specialized expertise in vLLM 
-                and Dynamo systems. Serving as maintainer of the MindScience repository, driving 
+                and vLLM-Ascend systems. Serving as maintainer of the MindScience repository, driving 
                 AI4Science initiatives and conducting cutting-edge research in large language model 
                 deployment and inference optimization for scientific computing applications.
               </p>
@@ -265,7 +307,7 @@ export default function Home() {
                   vLLM Expert
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Dynamo
+                  vLLM-Ascend
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   AI4Science
@@ -433,7 +475,7 @@ export default function Home() {
               },
               { 
                 title: 'LLM Serving Research', 
-                desc: 'Specialized research in large language model serving optimization with vLLM and Dynamo systems.',
+                desc: 'Specialized research in large language model serving optimization with vLLM and vLLM-Ascend systems.',
                 category: 'ML Infrastructure',
                 icon: 'llm'
               },
@@ -447,13 +489,21 @@ export default function Home() {
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700">
                 {index === 0 ? (
                   // MindScience project with custom logo
-                  <div className="w-full h-32 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg mb-4 flex items-center justify-center p-4">
-                    <img 
-                      src="/mindscience-icon.svg" 
-                      alt="MindScience Logo" 
-                      className="w-24 h-24 object-contain"
-                    />
-                  </div>
+                  <a 
+                    href="https://gitee.com/mindspore/mindscience"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                    title="Visit MindScience Platform on Gitee"
+                  >
+                    <div className="w-full h-32 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg mb-4 flex items-center justify-center p-4 hover:scale-105 transition-transform cursor-pointer">
+                      <img 
+                        src="/mindscience-icon.svg" 
+                        alt="MindScience Logo" 
+                        className="w-24 h-24 object-contain"
+                      />
+                    </div>
+                  </a>
                 ) : (
                   // Other projects with icons
                   <div className="w-full h-32 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
@@ -514,42 +564,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-12">
-            Get In Touch
-          </h2>
-          
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            I&apos;m always interested in hearing about new opportunities and interesting projects.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a 
-              href="mailto:liuhongsheng4@huawei.com"
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              Send Email
-            </a>
-            
-            <a 
-              href="https://linkedin.com/in/hsliu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 px-6 py-3 border border-indigo-600 text-indigo-600 dark:text-indigo-400 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 dark:border-gray-700">

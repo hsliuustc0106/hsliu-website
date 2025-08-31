@@ -122,8 +122,7 @@ hsliu-website/
   - **MindEarth**: Weather forecasting and earth sciences
   - **MindFlow**: Computational fluid dynamics
   - **MindSPONGE**: Computational biology and molecular simulation
-- **LLM Serving Research**: vLLM and Dynamo optimization
-- **AI4Science Publications**: Research portfolio
+- **LLM Serving Research**: vLLM and vLLM-Ascend optimization
 
 ## 🔧 Technologies Used
 

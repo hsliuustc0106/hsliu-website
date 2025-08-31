@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hongsheng Liu - Research Scientist",
-  description: "Research Scientist at Huawei 2012 Lab specializing in LLM Serving (vLLM & Dynamo) and AI4Science. Expert in large language model optimization and scientific computing.",
-  keywords: "research scientist, LLM serving, vLLM, Dynamo, AI4Science, Huawei 2012 Lab, machine learning, scientific computing",
+  description: "Research Scientist at Huawei 2012 Lab specializing in LLM Serving (vLLM & vLLM-Ascend) and AI4Science. Expert in large language model optimization and scientific computing.",
+  keywords: "research scientist, LLM serving, vLLM, vLLM-Ascend, AI4Science, Huawei 2012 Lab, machine learning, scientific computing",
   authors: [{ name: "Hongsheng Liu" }],
   openGraph: {
     title: "Hongsheng Liu - Research Scientist",

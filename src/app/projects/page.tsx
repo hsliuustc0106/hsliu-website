@@ -106,44 +106,38 @@ export default function Projects() {
               },
               { 
                 title: 'LLM Serving Research', 
-                desc: 'Specialized research in large language model serving optimization with expertise in vLLM and Dynamo systems. Focus on performance optimization, distributed inference, and ML infrastructure for production-scale deployments.',
+                desc: 'Specialized research in large language model serving optimization with expertise in vLLM and vLLM-Ascend systems. Focus on performance optimization, distributed inference, and ML infrastructure for production-scale deployments.',
                 link: 'https://github.com/vllm-project/vllm',
                 category: 'ML Infrastructure',
                 features: [
                   'vLLM optimization and contributions',
-                  'Dynamo integration and performance',
+                  'vLLM-Ascend integration and performance',
                   'Distributed inference systems',
                   'Production-scale deployments',
                   'Performance benchmarking'
                 ],
-                tech: ['PyTorch', 'vLLM', 'Dynamo', 'CUDA', 'Distributed Systems']
-              },
-              { 
-                title: 'AI4Science Publications', 
-                desc: 'Leading research at Huawei 2012 Lab in AI for scientific computing with 9 published academic contributions spanning top venues including KDD, NeurIPS, ICLR, and IJCAI.',
-                link: 'https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN',
-                category: 'Research',
-                features: [
-                  '9 publications in top venues',
-                  'AI4Science methodology development',
-                  'Physics-informed neural networks',
-                  'Graph learning for science',
-                  'Foundation models for PDEs'
-                ],
-                tech: ['PyTorch', 'Scientific ML', 'Graph Neural Networks', 'Physics-Informed NNs']
+                tech: ['PyTorch', 'vLLM', 'vLLM-Ascend', 'CUDA', 'Distributed Systems']
               }
             ].map((project, index) => (
               <div key={index} className={`${project.isMainProject ? 'lg:col-span-2' : ''}`}>
                 <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
                   {project.isMainProject || index === 0 ? (
                     // MindScience project and its subprojects with custom logo
-                    <div className="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg mb-4 flex items-center justify-center p-4">
-                      <img 
-                        src="/mindscience-icon.svg" 
-                        alt="MindScience Logo" 
-                        className="w-32 h-32 object-contain"
-                      />
-                    </div>
+                    <a 
+                      href="https://gitee.com/mindspore/mindscience"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                      title="Visit MindScience Platform on Gitee"
+                    >
+                      <div className="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg mb-4 flex items-center justify-center p-4 hover:scale-105 transition-transform cursor-pointer">
+                        <img 
+                          src="/mindscience-icon.svg" 
+                          alt="MindScience Logo" 
+                          className="w-32 h-32 object-contain"
+                        />
+                      </div>
+                    </a>
                   ) : (
                     // Other projects with gradient background
                     <div className="w-full h-48 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
@@ -230,13 +224,21 @@ export default function Projects() {
                         {project.subprojects.map((subproject, subIndex) => (
                           <div key={subIndex} className="bg-gray-50 dark:bg-slate-700 rounded-lg p-4 hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors">
                             {/* MindScience logo for each subproject */}
-                            <div className="w-full h-20 bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 rounded-lg mb-3 flex items-center justify-center">
-                              <img 
-                                src="/mindscience-icon.svg" 
-                                alt="MindScience Logo" 
-                                className="w-12 h-12 object-contain opacity-80"
-                              />
-                            </div>
+                            <a 
+                              href={subproject.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block"
+                              title={`Visit ${subproject.title} on Gitee`}
+                            >
+                              <div className="w-full h-20 bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-600 dark:to-slate-700 rounded-lg mb-3 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer">
+                                <img 
+                                  src="/mindscience-icon.svg" 
+                                  alt="MindScience Logo" 
+                                  className="w-12 h-12 object-contain opacity-80"
+                                />
+                              </div>
+                            </a>
                             
                             <h5 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                               {subproject.title}
