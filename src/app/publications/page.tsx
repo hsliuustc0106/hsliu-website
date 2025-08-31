@@ -90,7 +90,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2506.10778",
                 diagramUrl: "/diagrams/SlotPi.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/SlotPi.mp4", // Video will be added later
                 tags: ["AI4Science", "Physics-informed ML", "Object-centric Learning", "Slot Attention", "Physical Reasoning"]
               },
               // 2024 Publications
