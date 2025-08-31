@@ -153,7 +153,7 @@ export default function Publications() {
                 description: "We propose a novel approach for transportation origin-destination (OD) demand estimation using quasi-sparsity techniques. Our method addresses the challenge of estimating OD flows in transportation networks by leveraging advanced optimization algorithms and sparsity constraints, enabling more accurate and efficient transportation planning and traffic management.",
                 blogUrl: "#",
                 paperUrl: "https://pubsonline.informs.org/doi/abs/10.1287/trsc.2022.1178",
-                diagramUrl: "/diagrams/od-estimation-framework.png",
+                diagramUrl: "/diagrams/quasi-sparsity.png",
                 tags: ["Transportation", "Origin-Destination", "Demand Estimation", "Quasi-Sparsity", "Optimization", "Traffic Analysis", "Operations Research"]
               },
               // 2022 Publications
