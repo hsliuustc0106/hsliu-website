@@ -329,6 +329,16 @@ export default function Home() {
                 blogUrl: "#", // Will be updated when blog post is ready
                 paperUrl: "#", // Will be updated with actual paper link
                 tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
+              },
+              {
+                title: "P²C Net: PDE-Preserved Coarse Correction Network for efficient prediction of spatiotemporal dynamics",
+                authors: "Qi Wang, Pu Ren, Haoyu Zhou, Xiao-Yu Liu, Zidong Deng, Yi Zhang, Ruizhi Chengze, Hongsheng Liu, et al.",
+                venue: "Advances in Neural Information Processing Systems (NeurIPS) 2024",
+                type: "AI4Science",
+                description: "We introduce P²C Net, a novel PDE-preserved coarse correction network that efficiently predicts spatiotemporal dynamics. Our method combines coarse-scale predictions with fine-scale corrections while preserving the underlying physical constraints, achieving significant computational speedup without sacrificing accuracy in spatiotemporal modeling tasks.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
