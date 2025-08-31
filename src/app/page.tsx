@@ -299,6 +299,16 @@ export default function Home() {
                 blogUrl: "#", // Will be updated when blog post is ready
                 paperUrl: "#", // Will be updated with actual paper link
                 tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
+              },
+              {
+                title: "Meta-auto-decoder for solving parametric partial differential equations",
+                authors: "Xiang Huang, Zhanhong Ye, Hongsheng Liu, Shi Ji, Zidong Wang, Kang Yang, Yang Li, Min Wang, Haotian Chu, Fan Yu, Bei Hua, Lei Chen, Bin Dong",
+                venue: "Advances in Neural Information Processing Systems (NeurIPS) 2022",
+                type: "AI4Science",
+                description: "We introduce Meta-auto-decoder, a novel meta-learning framework for solving parametric partial differential equations (PDEs). Our approach combines meta-learning with auto-decoder architectures to efficiently adapt to new PDE parameters and boundary conditions, enabling rapid solution of parametric PDE families with minimal computational overhead and superior generalization capabilities.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
