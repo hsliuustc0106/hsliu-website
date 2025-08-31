@@ -300,7 +300,8 @@ export default function Home() {
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                   Specialized expertise in large language model serving optimization with 
-                  deep focus on vLLM and vLLM-Ascend systems. I lead research in high-performance 
+                  deep focus on vLLM and vLLM-Ascend systems. Rich experience with Ascend NPU 
+                  architecture, optimization techniques, and hardware acceleration. I lead research in high-performance 
                   LLM deployment, inference optimization, and distributed serving architectures 
                   for production-scale applications.
                 </p>
@@ -312,7 +313,7 @@ export default function Home() {
                 </p>
                 
                 <div className="flex flex-wrap gap-2">
-                  {['LLM Serving', 'vLLM', 'vLLM-Ascend', 'Performance Optimization', 'CUDA', 'Distributed Systems'].map((skill) => (
+                  {['LLM Serving', 'vLLM', 'vLLM-Ascend', 'Ascend NPU', 'Performance Optimization', 'CUDA', 'Distributed Systems'].map((skill) => (
                     <span key={skill} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm">
                       {skill}
                     </span>
@@ -328,7 +329,7 @@ export default function Home() {
               Core Technologies
             </h4>
             <div className="flex flex-wrap justify-center gap-2">
-              {['Python', 'C++', 'PyTorch', 'Machine Learning', 'Deep Learning'].map((tech) => (
+              {['AI', 'Python', 'MindSpore/PyTorch', 'vLLM/vLLM-Ascend'].map((tech) => (
                 <span key={tech} className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm border border-gray-200 dark:border-gray-600">
                   {tech}
                 </span>
@@ -352,10 +353,12 @@ export default function Home() {
               </h3>
               <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab • Present</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Leading research in LLM Serving optimization with specialized expertise in vLLM 
-                and vLLM-Ascend systems. Serving as maintainer of the MindScience repository, driving 
-                AI4Science initiatives and conducting cutting-edge research in large language model 
-                deployment and inference optimization for scientific computing applications.
+                1. Maintainer of MindSpore Science open source project, leading AI4Science 
+                initiatives for scientific computing and discovery.
+                
+                2. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.
+                
+                Bringing rich experience with Ascend NPU architecture and optimization.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
@@ -369,6 +372,9 @@ export default function Home() {
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   vLLM-Ascend
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Ascend NPU
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   AI4Science

@@ -267,13 +267,13 @@ export default function Publications() {
                   </div>
                   
                   {/* Publication Visual/Diagram */}
-                  <div className="lg:w-64 flex-shrink-0">
-                    <div className="w-full h-40 lg:h-full bg-white dark:bg-slate-700 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 hover:shadow-lg transition-shadow">
+                  <div className="lg:w-96 xl:w-[28rem] 2xl:w-[32rem] flex-shrink-0">
+                    <div className="w-full h-56 lg:h-80 xl:h-96 2xl:h-[26rem] bg-white dark:bg-slate-700 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-600 hover:shadow-2xl transition-all duration-300 group">
                       {publication.diagramUrl ? (
                         <img 
                           src={publication.diagramUrl}
                           alt={`${publication.title} - Research Diagram`}
-                          className="w-full h-full object-contain p-2 hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-500 cursor-pointer group-hover:p-2"
                           onError={(e) => {
                             // Fallback to placeholder if image fails to load
                             const target = e.target as HTMLImageElement;
@@ -281,14 +281,15 @@ export default function Publications() {
                             const fallback = target.nextSibling as HTMLElement;
                             if (fallback) fallback.style.display = 'flex';
                           }}
+                          onClick={() => window.open(publication.diagramUrl, '_blank')}
                         />
                       ) : null}
-                      <div className={`w-full h-full bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white ${publication.diagramUrl ? 'hidden' : 'flex'}`}>
-                        <div className="text-center p-4">
-                          <svg className="w-12 h-12 mx-auto mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className={`w-full h-full bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white ${publication.diagramUrl ? 'hidden' : 'flex'}`}>
+                        <div className="text-center p-6">
+                          <svg className="w-16 h-16 mx-auto mb-3 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                           </svg>
-                          <p className="text-sm font-medium opacity-90">Research Paper</p>
+                          <p className="text-base font-medium opacity-90">Research Paper</p>
                         </div>
                       </div>
                     </div>
