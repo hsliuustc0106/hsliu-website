@@ -153,5 +153,7 @@ Feel free to submit issues and enhancement requests!
 
 **Contact**: [liuhongsheng4@huawei.com](mailto:liuhongsheng4@huawei.com)
 
-**Live Website**: https://hsliuustc0106.github.io/hsliu-website (after GitHub setup)
+**Live Website**: https://hsliuustc0106.github.io/hsliu-website
+
+🌟 **Status**: Deploying... (GitHub Pages configuration required)
 
