@@ -115,7 +115,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2411.00040",
                 diagramUrl: "/diagrams/P2C2-net.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/P2C2Net__AI_Storm_Predictor.mp4", // Video explanation available
                 tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
               },
               {
@@ -164,7 +164,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2307.07323",
                 diagramUrl: "/diagrams/mesh-transformation.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/Deep Learning for Unsteady 3D Fluid Flow Prediction.mp4", // Video explanation available
                 tags: ["AI4Science", "Reduced Order Models", "Deep Learning", "Computational Fluid Dynamics", "Mesh Transformation", "Unsteady Flow", "Scientific ML"]
               },
               {
@@ -189,7 +189,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://proceedings.neurips.cc/paper_files/paper/2022/file/948552777302d3abf92415b1d7e9de70-Paper-Conference.pdf",
                 diagramUrl: "/diagrams/meta-auto-decoder.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/Meta-auto-decoder.mp4", // Video explanation available
                 tags: ["AI4Science", "Meta-learning", "Partial Differential Equations", "Auto-decoder", "Parametric PDEs", "Scientific ML"]
               },
               {
@@ -201,7 +201,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://www.ijcai.org/proceedings/2022/0533.pdf",
                 diagramUrl: "/diagrams/universal-pinns.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/universal pinns.mp4", // Video explanation available
                 tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
               },
               // 2018 Publications
