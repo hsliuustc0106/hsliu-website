@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Configure the base path for GitHub Pages if needed
-  // basePath: '/hsliu-website', // Uncomment if your repo is not named 'username.github.io'
+  // Configure the base path for GitHub Pages
+  basePath: '/hsliu-website',
 };
 
 export default nextConfig;

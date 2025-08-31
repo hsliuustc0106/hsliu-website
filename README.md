@@ -21,7 +21,7 @@ A modern, responsive personal website built with Next.js and Tailwind CSS. This 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hsliu/hsliu-website.git
+git clone https://github.com/hsliuustc0106/hsliu-website.git
 cd hsliu-website
 ```
 
@@ -48,7 +48,7 @@ npm run dev
 
 2. **Push your code to GitHub**:
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git remote add origin https://github.com/hsliuustc0106/hsliu-website.git
    git branch -M main
    git push -u origin main
    ```
@@ -62,7 +62,7 @@ npm run dev
 
 4. **Access Your Website**:
    - For `username.github.io` repo: `https://username.github.io`
-   - For other repos: `https://username.github.io/repo-name`
+   - For project repos like yours: `https://hsliuustc0106.github.io/hsliu-website`
 
 ### Method 2: Manual Build and Deploy
 
@@ -153,5 +153,5 @@ Feel free to submit issues and enhancement requests!
 
 **Contact**: [liuhongsheng4@huawei.com](mailto:liuhongsheng4@huawei.com)
 
-**Live Website**: [Coming soon after GitHub setup]
+**Live Website**: https://hsliuustc0106.github.io/hsliu-website (after GitHub setup)
 
