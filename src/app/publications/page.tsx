@@ -144,6 +144,18 @@ export default function Publications() {
               },
               // 2023 Publications
               {
+                title: "Prediction of transonic flow over supercritical airfoils using geometric-encoding and deep-learning strategies",
+                authors: "Zhiwen Deng, Jing Wang, Hongsheng Liu, Hairun Xie, BoKai Li, Miao Zhang, Tingmeng Jia, Yi Zhang, Zidong Wang, Bin Dong",
+                venue: "Physics of Fluids 35, 075146 (2023)",
+                type: "AI4Science",
+                description: "We present a novel approach for predicting transonic flow over supercritical airfoils using geometric-encoding and deep-learning strategies. Our method combines advanced geometric encoding techniques with deep neural networks to accurately predict complex flow patterns around airfoils, enabling efficient aerodynamic analysis and design optimization for transonic flight conditions.",
+                blogUrl: "#",
+                paperUrl: "https://arxiv.org/pdf/2303.03695",
+                diagramUrl: "/diagrams/transonic-airfoil.png", // Research diagram available
+                videoUrl: "", // Video will be added later
+                tags: ["AI4Science", "Computational Fluid Dynamics", "Deep Learning", "Geometric Encoding", "Transonic Flow", "Airfoil Design", "Aerodynamics"]
+              },
+              {
                 title: "Deep learning-based reduced order model for three-dimensional unsteady flow using mesh transformation and stitching",
                 authors: "Xin Li, Zhiwen Deng, Rui Feng, Ziyang Liu, Renkun Han, Hongsheng Liu, Gang Chen",
                 venue: "Computers & Fluids 2024",
