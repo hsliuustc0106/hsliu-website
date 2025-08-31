@@ -188,7 +188,7 @@ export default function Publications() {
                 description: "We analyze the convergence properties of the augmented decomposition algorithm for solving large-scale optimization problems. Our theoretical analysis provides convergence guarantees and establishes convergence rates for this important class of decomposition methods, with applications to distributed optimization and ML infrastructure.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/1808.08287",
-                diagramUrl: "/diagrams/convergence-analysis.png",
+                diagramUrl: "/diagrams/convergence-of-ADA.png",
                 tags: ["ML Optimization", "Optimization Theory", "Decomposition Algorithms", "Convergence Analysis", "Distributed Systems", "ML Infrastructure"]
               }
             ].map((publication, index) => (
