@@ -279,6 +279,26 @@ export default function Home() {
                 blogUrl: "#", // Will be updated when blog post is ready
                 paperUrl: "#", // Will be updated with actual paper link
                 tags: ["AI4Science", "Graph Learning", "Spatiotemporal Dynamics", "Conservation Laws", "Scientific ML"]
+              },
+              {
+                title: "SlotPi: Physics-informed Object-centric Reasoning Models",
+                authors: "Jian Li, Wan Han, Ning Lin, Yu-Liang Zhan, Ruizhi Chengze, Haining Wang, Yi Zhang, Hongsheng Liu, Zidong Wang, Fan Yu, Hao Sun",
+                venue: "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2025",
+                type: "AI4Science",
+                description: "We introduce SlotPi, a novel physics-informed framework that combines object-centric representation learning with physical reasoning. By integrating physics principles into slot attention mechanisms, our approach enables more interpretable and physically consistent object-centric reasoning in complex dynamic systems.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Physics-informed ML", "Object-centric Learning", "Slot Attention", "Physical Reasoning"]
+              },
+              {
+                title: "Learnable-Differentiable Finite Volume Solver for Accelerated Simulation of Flows",
+                authors: "Hongsheng Liu, et al.",
+                venue: "To be announced",
+                type: "AI4Science",
+                description: "We present a novel learnable-differentiable finite volume solver that significantly accelerates computational fluid dynamics simulations. By combining traditional finite volume methods with differentiable programming and machine learning techniques, our approach enables end-to-end optimization of flow simulations while maintaining physical accuracy and computational efficiency.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
