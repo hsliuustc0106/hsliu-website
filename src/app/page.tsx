@@ -114,13 +114,13 @@ export default function Home() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            AI Infrastructure Engineer • AI4Science Researcher • Open Source Contributor
+            Research Scientist • LLM Serving Expert • AI4Science Researcher
           </p>
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            I specialize in AI infrastructure and AI4Science research. Contributing to open-source projects 
-            like vLLM while conducting research at the intersection of AI and scientific computing. 
-            Passionate about optimizing ML systems and advancing scientific discovery through AI.
+            Research Scientist at Huawei 2012 Lab with specialized expertise in LLM Serving 
+            (vLLM & Dynamo) and AI4Science. Passionate about optimizing large language models 
+            and advancing scientific discovery through AI innovation.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -177,19 +177,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                I&apos;m a passionate researcher and engineer working at the intersection of AI infrastructure 
-                and AI4Science. I contribute to open-source projects like vLLM, focusing on optimizing 
-                large language model serving and inference for scientific applications.
+                I&apos;m a Research Scientist at Huawei 2012 Lab with extensive experience in 
+                large language model serving and AI4Science. My research focuses on optimizing 
+                LLM inference systems like vLLM and Dynamo for high-performance deployment.
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                My research spans AI4Science, AIGC, and optimization, with expertise in distributed 
-                systems and high-performance computing. I enjoy bridging the gap between cutting-edge 
-                AI research and practical scientific applications.
+                With enormous experience in LLM serving technologies and deep expertise in 
+                AI4Science applications, I bridge cutting-edge research with practical 
+                implementations for scientific computing and model optimization.
               </p>
               
               <div className="flex flex-wrap gap-2">
-                {['Python', 'C++', 'PyTorch', 'vLLM', 'CUDA', 'AI4Science', 'AIGC', 'Optimization', 'Distributed Systems'].map((skill) => (
+                {['LLM Serving', 'vLLM', 'Dynamo', 'AI4Science', 'Python', 'C++', 'PyTorch', 'CUDA', 'Research'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm">
                     {skill}
                   </span>
@@ -216,29 +216,30 @@ export default function Home() {
           <div className="space-y-8">
             <div className="border-l-4 border-indigo-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                AI Infrastructure Engineer & AI4Science Researcher
+                Research Scientist
               </h3>
-              <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei</p>
+              <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Leading research in AI4Science, AIGC, and optimization while developing 
-                machine learning infrastructure. Contributing to open-source projects like vLLM 
-                to improve performance and scalability of ML workloads for scientific applications.
+                Leading research in LLM Serving optimization with specialized expertise in vLLM 
+                and Dynamo systems. Conducting cutting-edge AI4Science research with enormous 
+                experience in large language model deployment and inference optimization for 
+                scientific computing applications.
               </p>
               <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  LLM Serving
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  vLLM Expert
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Dynamo
+                </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   AI4Science
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  ML Infrastructure
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  AIGC Research
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  vLLM Contributor
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Optimization
+                  Research Scientist
                 </span>
               </div>
             </div>
@@ -257,19 +258,19 @@ export default function Home() {
             {/* Project placeholders - you can customize these */}
             {[
               { 
+                title: 'LLM Serving Research', 
+                desc: 'Specialized research in large language model serving optimization with expertise in vLLM and Dynamo systems',
+                link: 'https://github.com/vllm-project/vllm'
+              },
+              { 
                 title: 'AI4Science Research', 
-                desc: 'Research at the intersection of AI and scientific computing, with focus on AIGC and optimization for scientific applications',
+                desc: 'Leading research at Huawei 2012 Lab in AI for scientific computing and discovery applications',
                 link: 'https://scholar.google.com/citations?user=M7ag7rIAAAAJ&hl=zh-CN'
               },
               { 
                 title: 'vLLM Contributions', 
-                desc: 'Contributing to vLLM, an open-source library for fast LLM inference and serving with performance optimizations',
+                desc: 'Enormous experience contributing to vLLM open-source project for high-performance LLM inference',
                 link: 'https://github.com/vllm-project/vllm'
-              },
-              { 
-                title: 'ML Infrastructure', 
-                desc: 'Building scalable machine learning infrastructure for large language model deployment in scientific contexts',
-                link: '#'
               }
             ].map((project, index) => (
               <div key={index} className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">

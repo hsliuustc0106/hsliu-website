@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hongsheng Liu - Personal Website",
-  description: "Software Engineer & Technology Enthusiast. I create innovative solutions and build amazing digital experiences.",
-  keywords: "software engineer, web developer, technology, programming, React, Next.js",
+  title: "Hongsheng Liu - Research Scientist",
+  description: "Research Scientist at Huawei 2012 Lab specializing in LLM Serving (vLLM & Dynamo) and AI4Science. Expert in large language model optimization and scientific computing.",
+  keywords: "research scientist, LLM serving, vLLM, Dynamo, AI4Science, Huawei 2012 Lab, machine learning, scientific computing",
   authors: [{ name: "Hongsheng Liu" }],
   openGraph: {
-    title: "Hongsheng Liu - Personal Website",
-    description: "Software Engineer & Technology Enthusiast",
+    title: "Hongsheng Liu - Research Scientist",
+    description: "Research Scientist specializing in LLM Serving and AI4Science",
     type: "website",
   },
 };
