@@ -339,6 +339,16 @@ export default function Home() {
                 blogUrl: "#", // Will be updated when blog post is ready
                 paperUrl: "#", // Will be updated with actual paper link
                 tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
+              },
+              {
+                title: "PhyMPGN: Physics-encoded Message Passing Graph Network for spatiotemporal PDE systems",
+                authors: "Bindi Zeng, Qi Wang, Mengtao Yan, Yang Liu, Ruizhi Chengze, Yi Zhang, Hongsheng Liu, Zidong Wang, et al.",
+                venue: "International Conference on Learning Representations (ICLR) 2025",
+                type: "AI4Science",
+                description: "We present PhyMPGN, a physics-encoded message passing graph network designed for solving spatiotemporal PDE systems. Our approach integrates physical principles directly into the message passing framework, enabling more accurate and physically consistent predictions for complex spatiotemporal dynamics while maintaining computational efficiency.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Graph Neural Networks", "Message Passing", "Physics-encoded", "Spatiotemporal PDEs", "Scientific ML"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
