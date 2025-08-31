@@ -74,7 +74,7 @@ export default function Publications() {
                 description: "We present a novel learnable-differentiable finite volume solver that significantly accelerates computational fluid dynamics simulations. By combining traditional finite volume methods with differentiable programming and machine learning techniques, our approach enables end-to-end optimization of flow simulations while maintaining physical accuracy and computational efficiency.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2507.01975",
-                diagramUrl: "/diagrams/finite-volume-solver.png",
+                diagramUrl: "/diagrams/Learnable-differentiable Solver.png",
                 tags: ["AI4Science", "Computational Fluid Dynamics", "Differentiable Programming", "Finite Volume Method", "Flow Simulation", "Scientific ML"]
               },
               {
