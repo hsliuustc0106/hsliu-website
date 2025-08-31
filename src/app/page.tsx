@@ -301,23 +301,23 @@ export default function Home() {
             
             <div className="border-l-4 border-green-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Bachelor&apos;s Degree
+                Bachelor&apos;s Degree in Mathematical Statistics
               </h3>
               <p className="text-green-600 dark:text-green-400 mb-2">School for the Gifted Young, USTC • 2011-2015</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Undergraduate education at the prestigious School for the Gifted Young at the University 
-                of Science and Technology of China, providing accelerated academic training and 
-                comprehensive foundation in mathematics, science, and engineering.
+                Undergraduate education in Mathematical Statistics at the prestigious School for the Gifted Young 
+                at the University of Science and Technology of China, providing accelerated academic training and 
+                comprehensive foundation in mathematical theory, statistical methods, and quantitative analysis.
               </p>
               <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Mathematical Statistics
+                </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   Gifted Education
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Mathematics
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Science Foundation
+                  Quantitative Analysis
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   USTC
@@ -449,7 +449,7 @@ export default function Home() {
                   // MindScience project with custom logo
                   <div className="w-full h-32 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800 rounded-lg mb-4 flex items-center justify-center p-4">
                     <img 
-                      src="/hsliu-website/mindscience-icon.svg" 
+                      src="/mindscience-icon.svg" 
                       alt="MindScience Logo" 
                       className="w-24 h-24 object-contain"
                     />

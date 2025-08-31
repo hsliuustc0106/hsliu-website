@@ -7,8 +7,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Configure the base path for GitHub Pages
-  basePath: '/hsliu-website',
 };
 
 export default nextConfig;
