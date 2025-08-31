@@ -319,6 +319,16 @@ export default function Home() {
                 blogUrl: "#", // Will be updated when blog post is ready
                 paperUrl: "#", // Will be updated with actual paper link
                 tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
+              },
+              {
+                title: "A Universal PINNs Method for Solving Partial Differential Equations with a Point Source",
+                authors: "Xiang Huang, Hongsheng Liu, Boming Shi, Zidong Wang, Kang Yang, Yang Li, Min Wang, Haotian Chu, Jing Zhou, et al.",
+                venue: "International Joint Conference on Artificial Intelligence (IJCAI)",
+                type: "AI4Science",
+                description: "We propose a universal Physics-Informed Neural Networks (PINNs) method for solving partial differential equations with point sources. Our approach addresses the challenge of handling singular point sources in PDEs by developing a novel neural network architecture that can effectively capture the complex behavior around singularities while maintaining high accuracy across the entire domain.",
+                blogUrl: "#", // Will be updated when blog post is ready
+                paperUrl: "#", // Will be updated with actual paper link
+                tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
