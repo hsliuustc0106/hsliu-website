@@ -247,7 +247,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                 Research Scientist
               </h3>
-              <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab</p>
+              <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab • Present</p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Leading research in LLM Serving optimization with specialized expertise in vLLM 
                 and Dynamo systems. Serving as maintainer of the MindScience repository, driving 
@@ -269,6 +269,58 @@ export default function Home() {
                 </span>
                 <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
                   AI4Science
+                </span>
+              </div>
+            </div>
+            
+            <div className="border-l-4 border-purple-500 pl-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                Ph.D. in Statistics and Operations Research
+              </h3>
+              <p className="text-purple-600 dark:text-purple-400 mb-2">University of North Carolina at Chapel Hill • 2015-2020</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Doctoral research in Statistics and Operations Research, focusing on optimization theory 
+                and computational methods. Developed expertise in convergence analysis for decomposition 
+                algorithms and large-scale optimization problems.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Statistics
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Operations Research
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Optimization Theory
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Mathematical Analysis
+                </span>
+              </div>
+            </div>
+            
+            <div className="border-l-4 border-green-500 pl-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                Bachelor&apos;s Degree
+              </h3>
+              <p className="text-green-600 dark:text-green-400 mb-2">School for the Gifted Young, USTC • 2011-2015</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Undergraduate education at the prestigious School for the Gifted Young at the University 
+                of Science and Technology of China, providing accelerated academic training and 
+                comprehensive foundation in mathematics, science, and engineering.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Gifted Education
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Mathematics
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  Science Foundation
+                </span>
+                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                  USTC
                 </span>
               </div>
             </div>
