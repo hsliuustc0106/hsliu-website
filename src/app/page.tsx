@@ -354,11 +354,11 @@ export default function Home() {
                 title: "Convergence of the augmented decomposition algorithm",
                 authors: "Hongsheng Liu, Shiqian Lu",
                 venue: "Computational Optimization and Applications 72 (1), 179-213",
-                type: "AI4Science",
-                description: "We analyze the convergence properties of the augmented decomposition algorithm for solving large-scale optimization problems. Our theoretical analysis provides convergence guarantees and establishes convergence rates for this important class of decomposition methods, with applications to distributed optimization and scientific computing.",
+                type: "LLM Serving",
+                description: "We analyze the convergence properties of the augmented decomposition algorithm for solving large-scale optimization problems. Our theoretical analysis provides convergence guarantees and establishes convergence rates for this important class of decomposition methods, with applications to distributed optimization and ML infrastructure.",
                 blogUrl: "#", // Will be updated when blog post is ready
                 paperUrl: "#", // Will be updated with actual paper link
-                tags: ["AI4Science", "Optimization", "Decomposition Algorithms", "Convergence Analysis", "Computational Methods", "Scientific Computing"]
+                tags: ["ML Optimization", "Optimization Theory", "Decomposition Algorithms", "Convergence Analysis", "Distributed Systems", "ML Infrastructure"]
               }
               // Add more publications as needed
             ].map((publication, index) => (
