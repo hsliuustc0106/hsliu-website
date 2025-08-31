@@ -147,11 +147,11 @@ export default function Publications() {
                 paperUrl: "#",
                 tags: ["AI4Science", "Physics-Informed Neural Networks", "PINNs", "Partial Differential Equations", "Point Sources", "Scientific ML"]
               },
-              // Earlier Publications (Year not specified)
+              // 2019 Publications
               {
                 title: "Convergence of the augmented decomposition algorithm",
                 authors: "Hongsheng Liu, Shiqian Lu",
-                venue: "Computational Optimization and Applications 72 (1), 179-213",
+                venue: "Computational Optimization and Applications 72 (1), 179-213 (2019)",
                 type: "LLM Serving",
                 description: "We analyze the convergence properties of the augmented decomposition algorithm for solving large-scale optimization problems. Our theoretical analysis provides convergence guarantees and establishes convergence rates for this important class of decomposition methods, with applications to distributed optimization and ML infrastructure.",
                 blogUrl: "#",
