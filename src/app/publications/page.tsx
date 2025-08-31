@@ -119,7 +119,7 @@ export default function Publications() {
                 description: "We present PhyMPGN, a physics-encoded message passing graph network designed for solving spatiotemporal PDE systems. Our approach integrates physical principles directly into the message passing framework, enabling more accurate and physically consistent predictions for complex spatiotemporal dynamics while maintaining computational efficiency.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2410.01337",
-                diagramUrl: "/diagrams/phympgn-framework.png",
+                diagramUrl: "/diagrams/PHYMPGN.png",
                 tags: ["AI4Science", "Graph Neural Networks", "Message Passing", "Physics-encoded", "Spatiotemporal PDEs", "Scientific ML"]
               },
               {
