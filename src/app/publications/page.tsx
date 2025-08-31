@@ -152,7 +152,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2303.03695",
                 diagramUrl: "/diagrams/transonic-airfoil.png", // Research diagram available
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/transonic-airfoil.mp4", // Video will be added later
                 tags: ["AI4Science", "Computational Fluid Dynamics", "Deep Learning", "Geometric Encoding", "Transonic Flow", "Airfoil Design", "Aerodynamics"]
               },
               {
