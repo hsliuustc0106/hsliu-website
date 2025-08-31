@@ -108,7 +108,7 @@ export default function Publications() {
                 description: "We introduce P²C Net, a novel PDE-preserved coarse correction network that efficiently predicts spatiotemporal dynamics. Our method combines coarse-scale predictions with fine-scale corrections while preserving the underlying physical constraints, achieving significant computational speedup without sacrificing accuracy in spatiotemporal modeling tasks.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2411.00040",
-                diagramUrl: "/diagrams/p2c-net-architecture.png",
+                diagramUrl: "/diagrams/P2C2-net.png",
                 tags: ["AI4Science", "Spatiotemporal Dynamics", "PDE Preservation", "Coarse Correction", "Efficient Prediction", "Scientific ML"]
               },
               {
@@ -142,7 +142,7 @@ export default function Publications() {
                 description: "We present a novel deep learning-based reduced order model for three-dimensional unsteady flow simulation. Our approach combines mesh transformation techniques with stitching methods to efficiently model complex fluid dynamics, enabling fast and accurate predictions of unsteady flows while maintaining computational efficiency and physical accuracy.",
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2307.07323",
-                diagramUrl: "/diagrams/rom-mesh-transformation.png",
+                diagramUrl: "/diagrams/mesh-transformation.png",
                 tags: ["AI4Science", "Reduced Order Models", "Deep Learning", "Computational Fluid Dynamics", "Mesh Transformation", "Unsteady Flow", "Scientific ML"]
               },
               {
