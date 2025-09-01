@@ -139,7 +139,7 @@ export default function Publications() {
                 blogUrl: "#",
                 paperUrl: "https://arxiv.org/pdf/2402.12652",
                 diagramUrl: "/diagrams/pdeformer.png",
-                videoUrl: "", // Video will be added later
+                videoUrl: "/videos/PDEformer.mp4", // Video will be added later
                 tags: ["AI4Science", "Foundation Models", "Transformers", "Partial Differential Equations", "Neural PDE Solvers", "Scientific ML"]
               },
               // 2023 Publications
