@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'publications', 'projects'];
+      const sections = ['home', 'about', 'publications', 'projects'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -49,7 +49,7 @@ export default function Home() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'experience', 'publications', 'projects'].map((section) => (
+              {['home', 'about', 'publications', 'projects'].map((section) => (
                 <button
                   key={section}
                   onClick={() => {
@@ -94,7 +94,7 @@ export default function Home() {
           {/* Mobile Navigation */}
           {isMenuOpen && (
             <div className="md:hidden pb-4">
-              {['home', 'about', 'experience', 'publications', 'projects'].map((section) => (
+              {['home', 'about', 'publications', 'projects'].map((section) => (
                 <button
                   key={section}
                   onClick={() => {
@@ -307,97 +307,95 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Experience Section */}
-      <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-slate-800/50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Experience
-          </h2>
           
-          <div className="space-y-8">
-            <div className="border-l-4 border-indigo-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Research Scientist
-              </h3>
-              <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab • Present</p>
-              <div className="text-gray-600 dark:text-gray-300 mb-4 space-y-2">
-                <p>1. Maintainer of MindSpore Science open source project, leading AI4Science initiatives for scientific computing and discovery.</p>
-                <p>2. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.</p>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  MindScience Maintainer
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  LLM Serving
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  vLLM Expert
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  vLLM-Ascend
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Ascend NPU
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  AI4Science
-                </span>
-              </div>
-            </div>
+          {/* Professional Experience */}
+          <div className="mt-20">
+            <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+              Professional Experience
+            </h3>
             
-            <div className="border-l-4 border-purple-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Ph.D. in Statistics and Operations Research
-              </h3>
-              <p className="text-purple-600 dark:text-purple-400 mb-2">University of North Carolina at Chapel Hill • 2015-2020</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Doctoral research in Statistics and Operations Research, focusing on optimization theory 
-                and computational methods. Developed expertise in convergence analysis for decomposition 
-                algorithms and large-scale optimization problems.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Statistics
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Operations Research
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Optimization Theory
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Mathematical Analysis
-                </span>
+            <div className="space-y-8">
+              <div className="border-l-4 border-indigo-500 pl-6">
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  Research Scientist
+                </h4>
+                <p className="text-indigo-600 dark:text-indigo-400 mb-2">Huawei 2012 Lab • Present</p>
+                <div className="text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+                  <p>1. Maintainer of MindSpore Science open source project, leading AI4Science initiatives for scientific computing and discovery.</p>
+                  <p>2. Active contributor to vLLM & vLLM-Ascend and other LLM serving open source projects.</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    MindScience Maintainer
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    LLM Serving
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    vLLM Expert
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    vLLM-Ascend
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Ascend NPU
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    AI4Science
+                  </span>
+                </div>
               </div>
-            </div>
-            
-            <div className="border-l-4 border-green-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Bachelor&apos;s Degree in Mathematical Statistics
-              </h3>
-              <p className="text-green-600 dark:text-green-400 mb-2">School for the Gifted Young, USTC • 2011-2015</p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Undergraduate education in Mathematical Statistics at the prestigious School for the Gifted Young 
-                at the University of Science and Technology of China, providing accelerated academic training and 
-                comprehensive foundation in mathematical theory, statistical methods, and quantitative analysis.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Mathematical Statistics
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Gifted Education
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  Quantitative Analysis
-                </span>
-                <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
-                  USTC
-                </span>
+              
+              <div className="border-l-4 border-purple-500 pl-6">
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  Ph.D. in Statistics and Operations Research
+                </h4>
+                <p className="text-purple-600 dark:text-purple-400 mb-2">University of North Carolina at Chapel Hill • 2015-2020</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Doctoral research in Statistics and Operations Research, focusing on optimization theory 
+                  and computational methods. Developed expertise in convergence analysis for decomposition 
+                  algorithms and large-scale optimization problems.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Statistics
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Operations Research
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Optimization Theory
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Mathematical Analysis
+                  </span>
+                </div>
+              </div>
+              
+              <div className="border-l-4 border-green-500 pl-6">
+                <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  Bachelor&apos;s Degree in Mathematical Statistics
+                </h4>
+                <p className="text-green-600 dark:text-green-400 mb-2">School for the Gifted Young, USTC • 2011-2015</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Undergraduate education in Mathematical Statistics at the prestigious School for the Gifted Young 
+                  at the University of Science and Technology of China, providing accelerated academic training and 
+                  comprehensive foundation in mathematical theory, statistical methods, and quantitative analysis.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Mathematical Statistics
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Gifted Education
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    Quantitative Analysis
+                  </span>
+                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+                    USTC
+                  </span>
+                </div>
               </div>
             </div>
           </div>
